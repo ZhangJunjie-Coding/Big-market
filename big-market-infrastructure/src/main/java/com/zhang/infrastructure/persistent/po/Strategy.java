@@ -32,6 +32,8 @@ public class Strategy {
      **/
     private Date createTime;
 
+    private String ruleModels;
+
     /**
      * 更新时间
      **/

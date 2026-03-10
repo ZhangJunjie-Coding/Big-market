@@ -42,3 +42,16 @@ logging:
   level:
     root: info
   config: classpath:logback-spring.xml
+redis:
+  sdk:
+    config:
+      host: 223.109.142.81
+      pool-size: 10
+      port: 16379
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true

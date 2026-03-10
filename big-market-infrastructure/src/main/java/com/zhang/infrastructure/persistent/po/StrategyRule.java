@@ -1,5 +1,9 @@
 package com.zhang.infrastructure.persistent.po;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
 /**
@@ -7,6 +11,9 @@ import java.util.Date;
  * @Description: 策略规则
  * @DateTime: 2026/3/19 13:55
  **/
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class StrategyRule {
 
     private Long id;
