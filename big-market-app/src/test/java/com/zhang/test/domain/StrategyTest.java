@@ -21,7 +21,6 @@ import javax.annotation.Resource;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class StrategyTest {
-
     @Resource
     private IStrategyArmory strategyArmory;
 
