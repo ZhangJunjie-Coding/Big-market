@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 @LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.RULE_WHITELIST)
-public class Rule_WhiteListLogicFilter implements ILogicFilter<RuleActionEntity.RaffleBeforeEntity> {
+public class RuleWhiteListLogicFilter implements ILogicFilter<RuleActionEntity.RaffleBeforeEntity> {
 
     @Override
     public RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> filter(RuleMatterEntity ruleMatterEntity) {
