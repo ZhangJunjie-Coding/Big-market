@@ -37,6 +37,7 @@ public class RuleBackListLogicFilter implements ILogicFilter<RuleActionEntity.Ra
         // 100:user001,user002,user003
         // 过滤其他规则
         String[] userBlackIds = splitRuleValue[1].split(Constants.SPLIT);
+        // 判断当前用户是否在黑名单规则列表中
         for (String userBlackId : userBlackIds) {
             if (userId.equals(userBlackId)) {
                 return RuleActionEntity.<RuleActionEntity.RaffleBeforeEntity>builder()

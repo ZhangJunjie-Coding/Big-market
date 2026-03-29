@@ -48,9 +48,10 @@ public class RuleActionEntity<T extends RuleActionEntity.RaffleEntity> {
     }
 
     // 抽奖中的过滤规则
-    static public class RaffleMiddleEntity extends RaffleEntity {
+    static public class RaffleCenterEntity extends RaffleEntity {
 
     }
+
 
     static public class RaffleAfterEntity extends RaffleEntity {
 

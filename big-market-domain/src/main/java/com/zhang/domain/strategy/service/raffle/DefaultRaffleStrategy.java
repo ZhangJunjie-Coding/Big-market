@@ -37,7 +37,6 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     @Override
     protected RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> doCheckRaffleBeforeLogic(RaffleFactorEntity raffleFactorEntity, String... logics) {
         Map<String, ILogicFilter<RuleActionEntity.RaffleBeforeEntity>> logicFilterGroup = logicFactory.openLogicFilter();
-
         // 黑名单规则优先过滤
         String ruleBackList = Arrays.stream(logics)
                 .filter(str -> str.contains(DefaultLogicFactory.LogicModel.RULE_BLACKLIST.getCode()))
@@ -75,7 +74,6 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
             log.info("抽奖前规则过滤 userId: {} ruleModel: {} code: {} info: {}", raffleFactorEntity.getUserId(), ruleModel, ruleActionEntity.getCode(), ruleActionEntity.getInfo());
             if (!RuleLogicCheckTypeVO.ALLOW.getCode().equals(ruleActionEntity.getCode())) return ruleActionEntity;
         }
-
         return ruleActionEntity;
     }
 }

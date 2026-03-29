@@ -1,6 +1,5 @@
 package com.zhang.domain.strategy.service.rule;
 
-import com.zhang.domain.strategy.model.entity.RaffleAwardEntity;
 import com.zhang.domain.strategy.model.entity.RuleActionEntity;
 import com.zhang.domain.strategy.model.entity.RuleMatterEntity;
 
