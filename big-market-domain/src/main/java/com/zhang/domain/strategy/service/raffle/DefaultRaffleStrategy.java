@@ -1,14 +1,15 @@
 package com.zhang.domain.strategy.service.raffle;
 
-import com.sun.deploy.security.ruleset.RuleAction;
 import com.zhang.domain.strategy.model.entity.RaffleFactorEntity;
 import com.zhang.domain.strategy.model.entity.RuleActionEntity;
 import com.zhang.domain.strategy.model.entity.RuleMatterEntity;
 import com.zhang.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.zhang.domain.strategy.repository.IStrategyRepository;
+import com.zhang.domain.strategy.service.AbstractRaffleStrategy;
 import com.zhang.domain.strategy.service.armory.IStrategyDispatch;
-import com.zhang.domain.strategy.service.rule.ILogicFilter;
-import com.zhang.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.zhang.domain.strategy.service.rule.chain.facotry.DefaultChainFactory;
+import com.zhang.domain.strategy.service.rule.filter.ILogicFilter;
+import com.zhang.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
@@ -28,8 +29,8 @@ import java.util.stream.Collectors;
 @Service
 public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
 
-    public DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch) {
-        super(repository, strategyDispatch);
+    public DefaultRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory defaultChainFactory) {
+        super(repository, strategyDispatch,defaultChainFactory);
     }
 
     @Resource

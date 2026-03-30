@@ -1,6 +1,6 @@
 package com.zhang.domain.strategy.model.vo;
 
-import com.zhang.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.zhang.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.zhang.types.common.Constants;
 import lombok.*;
 

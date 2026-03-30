@@ -1,10 +1,9 @@
-package com.zhang.domain.strategy.service.rule.factory;
+package com.zhang.domain.strategy.service.rule.filter.factory;
 
 import com.zhang.domain.strategy.model.entity.RuleActionEntity;
 import com.zhang.domain.strategy.service.annotation.LogicStrategy;
-import com.zhang.domain.strategy.service.rule.ILogicFilter;
+import com.zhang.domain.strategy.service.rule.filter.ILogicFilter;
 import lombok.*;
-import lombok.extern.java.Log;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.stereotype.Service;
 

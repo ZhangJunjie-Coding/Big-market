@@ -1,12 +1,12 @@
-package com.zhang.domain.strategy.service.rule.impl;
+package com.zhang.domain.strategy.service.rule.filter.impl;
 
 import com.zhang.domain.strategy.model.entity.RuleActionEntity;
 import com.zhang.domain.strategy.model.entity.RuleMatterEntity;
 import com.zhang.domain.strategy.model.vo.RuleLogicCheckTypeVO;
 import com.zhang.domain.strategy.repository.IStrategyRepository;
 import com.zhang.domain.strategy.service.annotation.LogicStrategy;
-import com.zhang.domain.strategy.service.rule.ILogicFilter;
-import com.zhang.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.zhang.domain.strategy.service.rule.filter.ILogicFilter;
+import com.zhang.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.zhang.types.common.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -19,6 +19,7 @@ import java.util.*;
  * @Description: TODO
  * @DateTime: 2026/3/23 8:23
  **/
+@Deprecated
 @Slf4j
 @Component
 @LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.RULE_WEIGHT)
