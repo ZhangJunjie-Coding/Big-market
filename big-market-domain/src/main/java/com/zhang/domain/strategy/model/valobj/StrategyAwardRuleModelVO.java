@@ -1,4 +1,4 @@
-package com.zhang.domain.strategy.model.vo;
+package com.zhang.domain.strategy.model.valobj;
 
 import com.zhang.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.zhang.types.common.Constants;

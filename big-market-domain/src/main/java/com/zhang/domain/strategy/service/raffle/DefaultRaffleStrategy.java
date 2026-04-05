@@ -3,7 +3,7 @@ package com.zhang.domain.strategy.service.raffle;
 import com.zhang.domain.strategy.model.entity.RaffleFactorEntity;
 import com.zhang.domain.strategy.model.entity.RuleActionEntity;
 import com.zhang.domain.strategy.model.entity.RuleMatterEntity;
-import com.zhang.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import com.zhang.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
 import com.zhang.domain.strategy.repository.IStrategyRepository;
 import com.zhang.domain.strategy.service.AbstractRaffleStrategy;
 import com.zhang.domain.strategy.service.armory.IStrategyDispatch;

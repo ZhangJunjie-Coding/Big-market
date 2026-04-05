@@ -3,9 +3,8 @@ package com.zhang.domain.strategy.repository;
 import com.zhang.domain.strategy.model.entity.StrategyAwardEntity;
 import com.zhang.domain.strategy.model.entity.StrategyEntity;
 import com.zhang.domain.strategy.model.entity.StrategyRuleEntity;
-import com.zhang.domain.strategy.model.vo.StrategyAwardRuleModelVO;
+import com.zhang.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 
-import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 

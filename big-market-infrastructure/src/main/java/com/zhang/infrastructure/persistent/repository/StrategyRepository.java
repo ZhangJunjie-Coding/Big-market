@@ -3,7 +3,7 @@ package com.zhang.infrastructure.persistent.repository;
 import com.zhang.domain.strategy.model.entity.StrategyAwardEntity;
 import com.zhang.domain.strategy.model.entity.StrategyEntity;
 import com.zhang.domain.strategy.model.entity.StrategyRuleEntity;
-import com.zhang.domain.strategy.model.vo.StrategyAwardRuleModelVO;
+import com.zhang.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import com.zhang.domain.strategy.repository.IStrategyRepository;
 import com.zhang.infrastructure.persistent.dao.IStrategyAwardDao;
 import com.zhang.infrastructure.persistent.dao.IStrategyDao;
@@ -13,7 +13,6 @@ import com.zhang.infrastructure.persistent.po.StrategyAward;
 import com.zhang.infrastructure.persistent.po.StrategyRule;
 import com.zhang.infrastructure.persistent.redis.IRedisService;
 import com.zhang.types.common.Constants;
-import org.apache.tomcat.util.bcel.Const;
 import org.redisson.api.RMap;
 import org.springframework.stereotype.Repository;
 
