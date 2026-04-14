@@ -44,9 +44,12 @@
     <select id="queryStrategyAwardListByStrategyId" parameterType="java.lang.Long" resultMap="dataMap">
         SELECT strategy_id
              , award_id
+             , award_title
+             , award_subtitle
              , award_count
              , award_count_surplus
              , award_rate
+             , sort
         from strategy_award
         where strategy_id = #{strategy_id}
     </select>
@@ -59,5 +62,12 @@
         <if test="awardId !=null">
             and award_id = #{awardId}
         </if>
+    </select>
+
+    <select id="queryStrategyAward" resultMap="dataMap" parameterType="com.zhang.infrastructure.persistent.po.StrategyAward">
+        select strategy_id, award_id, award_title, award_subtitle, award_count, award_count_surplus, award_rate, rule_models, sort
+        from strategy_award
+        where strategy_id = #{strategyId} and award_id = #{awardId}
+
     </select>
 </mapper>

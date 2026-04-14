@@ -1,5 +1,6 @@
 package com.zhang.infrastructure.persistent.dao;
 
+import com.zhang.domain.strategy.model.entity.StrategyAwardEntity;
 import com.zhang.infrastructure.persistent.po.StrategyAward;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -21,4 +22,5 @@ public interface IStrategyAwardDao {
 
     void updateStrategyAwardStock(StrategyAward strategyAward);
 
+    StrategyAward queryStrategyAward(StrategyAward strategyAwardReq);
 }
