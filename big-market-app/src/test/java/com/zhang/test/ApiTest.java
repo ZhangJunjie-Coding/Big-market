@@ -1,6 +1,8 @@
 package com.zhang.test;
 
+import com.zhang.domain.support.id.IIdGenerator;
 import com.zhang.infrastructure.persistent.redis.IRedisService;
+import com.zhang.infrastructure.persistent.support.id.SnowflakeIdWorker;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,6 +21,17 @@ public class ApiTest {
     @Resource
     IRedisService redisService;
 
+
+    @Resource
+    IIdGenerator snowflakeIdWorker;
+
+
+    @Test
+    public void testIdGeneration(){
+        for (int i = 0;i<5;i++){
+            System.out.println(snowflakeIdWorker.nextId());
+        }
+    }
 
     @Test
     public void test() {
