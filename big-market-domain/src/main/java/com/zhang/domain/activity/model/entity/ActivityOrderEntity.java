@@ -1,29 +1,26 @@
-package com.zhang.infrastructure.persistent.po;
+package com.zhang.domain.activity.model.entity;
 
+import com.zhang.domain.activity.model.valobj.OrderStateVO;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 /**
- * @author 俊杰
- * @description 抽奖活动单 持久化对象
+ * @description 活动参与实体对象
  */
 @Data
-public class RaffleActivityOrder {
-    /**
-     * 自增ID
-     */
-    private Long id;
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ActivityOrderEntity {
 
     /**
      * 用户ID
      */
     private String userId;
-
-    /**
-     * sku
-     */
-    private Long sku;
 
     /**
      * 活动ID
@@ -50,8 +47,6 @@ public class RaffleActivityOrder {
      */
     private Date orderTime;
 
-
-
     /**
      * 总次数
      */
@@ -70,21 +65,6 @@ public class RaffleActivityOrder {
     /**
      * 订单状态
      */
-    private String state;
-
-    /**
-     * 业务仿重ID - 外部透传的，确保幂等
-     */
-    private String outBusinessNo;
-
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-
-    /**
-     * 更新时间
-     */
-    private Date updateTime;
+    private OrderStateVO state;
 
 }

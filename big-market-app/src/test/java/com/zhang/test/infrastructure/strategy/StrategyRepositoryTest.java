@@ -1,4 +1,4 @@
-package com.zhang.test.infrastructure;
+package com.zhang.test.infrastructure.strategy;
 
 import com.alibaba.fastjson.JSON;
 import com.zhang.domain.strategy.model.valobj.RuleTreeVO;

@@ -1,4 +1,4 @@
-package com.zhang.test.infrastructure;
+package com.zhang.test.infrastructure.strategy;
 
 import com.zhang.infrastructure.persistent.dao.IAwardDao;
 import com.zhang.infrastructure.persistent.po.Award;
