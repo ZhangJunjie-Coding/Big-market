@@ -11,6 +11,7 @@ import java.util.Date;
 @Data
 public class UserAwardRecord {
 
+
     /**
      * 自增ID
      */
@@ -55,5 +56,6 @@ public class UserAwardRecord {
      * 更新时间
      */
     private Date updateTime;
+
 
 }
