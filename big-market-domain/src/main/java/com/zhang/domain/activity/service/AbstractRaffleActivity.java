@@ -61,16 +61,12 @@ public abstract class AbstractRaffleActivity implements IRaffleOrder {
         // 2.3 查询次数信息（用户在活动上可参与的次数)
         ActivityCountEntity activityCountEntity = activityRepository.queryRaffleActivityCountByActivityCountId(activitySkuEntity.getActivityCountId());
 
-        // 3. 活动规则校验
-        IActionChain iActionChain = defaultActivityChainFactory.openActionChain();
-        boolean success = iActionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
-
-        if (success) {
-
-        }
+        // 3. 活动规则校验 todo 后续处理规则过滤流程，暂时也不处理责任链结果
+        IActionChain actionChain = defaultActivityChainFactory.openActionChain();
+        actionChain.action(activitySkuEntity, activityEntity, activityCountEntity);
 
         // 4. 构建订单聚合对象
-        CreateOrderAggregate createOrderAggregate  = buildOrderAggregate(skuRechargeEntity,activitySkuEntity,activityEntity,activityCountEntity);
+        CreateOrderAggregate createOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
 
         // 5.保存订单
         doSaveOrder(createOrderAggregate);
@@ -82,9 +78,7 @@ public abstract class AbstractRaffleActivity implements IRaffleOrder {
     protected abstract void doSaveOrder(CreateOrderAggregate createOrderAggregate);
 
 
-
     protected abstract CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity);
-
 
 
 }

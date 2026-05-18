@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
+ * @author ZhangJunjie
  * @description 活动状态值对象
  */
 @Getter

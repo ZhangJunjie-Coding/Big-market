@@ -106,3 +106,16 @@ logging:
   level:
     root: info
   config: classpath:logback-spring.xml
+
+# Spring配置 rabbitmq
+spring:
+  rabbitmq:
+    addresses: 223.109.142.81
+    port: 5672
+    username: admin
+    password: admin
+    listener:
+      simple:
+        prefetch: 1 # 每次投递n个消息，消费完再投递n个
+    topic:
+      activity_sku_stock_zero: activity_sku_stock_zero
