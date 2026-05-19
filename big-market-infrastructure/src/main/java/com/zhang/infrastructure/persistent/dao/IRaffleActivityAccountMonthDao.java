@@ -1,5 +1,7 @@
 package com.zhang.infrastructure.persistent.dao;
 
+import cn.bugstack.middleware.db.router.annotation.DBRouter;
+import com.zhang.infrastructure.persistent.po.RaffleActivityAccountMonth;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -9,4 +11,11 @@ import org.apache.ibatis.annotations.Mapper;
  **/
 @Mapper
 public interface IRaffleActivityAccountMonthDao {
+
+    int updateActivityAccountMonthSubtractionQuota(RaffleActivityAccountMonth build);
+
+    void insertActivityAccountMonth(RaffleActivityAccountMonth build);
+
+    @DBRouter
+    RaffleActivityAccountMonth queryActivityAccountMonthByUserId(RaffleActivityAccountMonth raffleActivityAccountMonth);
 }

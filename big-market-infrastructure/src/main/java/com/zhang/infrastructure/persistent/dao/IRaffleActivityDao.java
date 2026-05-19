@@ -1,8 +1,6 @@
 package com.zhang.infrastructure.persistent.dao;
 
-import com.zhang.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.zhang.infrastructure.persistent.po.RaffleActivity;
-import com.zhang.infrastructure.persistent.po.RaffleActivityOrder;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

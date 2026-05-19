@@ -1,4 +1,4 @@
-package com.zhang.test.domain;
+package com.zhang.test.domain.strategy;
 
 import com.zhang.domain.strategy.service.armory.IStrategyArmory;
 import com.zhang.domain.strategy.service.armory.IStrategyDispatch;

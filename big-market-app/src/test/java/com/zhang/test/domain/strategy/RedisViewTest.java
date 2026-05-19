@@ -1,4 +1,4 @@
-package com.zhang.test.domain;
+package com.zhang.test.domain.strategy;
 
 import com.zhang.infrastructure.persistent.redis.IRedisService;
 import lombok.extern.slf4j.Slf4j;

@@ -1,13 +1,12 @@
-package com.zhang.domain.activity.service.rule.impl;
+package com.zhang.domain.activity.service.quota.rule.impl;
 
 import com.zhang.domain.activity.model.entity.ActivityCountEntity;
 import com.zhang.domain.activity.model.entity.ActivityEntity;
 import com.zhang.domain.activity.model.entity.ActivitySkuEntity;
 import com.zhang.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.zhang.domain.activity.repository.IActivityRepository;
-import com.zhang.domain.activity.service.armory.IActivityArmory;
 import com.zhang.domain.activity.service.armory.IActivityDispatch;
-import com.zhang.domain.activity.service.rule.AbstractActionChain;
+import com.zhang.domain.activity.service.quota.rule.AbstractActionChain;
 import com.zhang.types.enums.ResponseCode;
 import com.zhang.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;

@@ -1,9 +1,8 @@
 package com.zhang.domain.activity.repository;
 
-import com.zhang.domain.activity.model.aggregate.CreateOrderAggregate;
-import com.zhang.domain.activity.model.entity.ActivityCountEntity;
-import com.zhang.domain.activity.model.entity.ActivityEntity;
-import com.zhang.domain.activity.model.entity.ActivitySkuEntity;
+import com.zhang.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
+import com.zhang.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
+import com.zhang.domain.activity.model.entity.*;
 import com.zhang.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
@@ -19,7 +18,7 @@ public interface IActivityRepository {
 
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
 
-    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+    void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
 
     void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
 
@@ -34,4 +33,19 @@ public interface IActivityRepository {
     void updateActivitySkuStock(Long sku);
 
     void clearActivitySkuStock(Long sku);
+
+    /**
+     * 查询未使用的订单记录
+     * @param partakeRaffleActivityEntity
+     * @return
+     */
+    UserRaffleOrderEntity queryNoUsedRaffleOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity);
+
+    void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
+
+    ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+
+    ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
+
+    ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
 }

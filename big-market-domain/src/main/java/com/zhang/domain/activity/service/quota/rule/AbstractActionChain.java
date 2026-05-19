@@ -1,4 +1,4 @@
-package com.zhang.domain.activity.service.rule;
+package com.zhang.domain.activity.service.quota.rule;
 
 /**
  * @Author: ZhangJunjie

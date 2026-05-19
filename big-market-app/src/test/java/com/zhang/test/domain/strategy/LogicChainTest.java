@@ -1,4 +1,4 @@
-package com.zhang.test.domain;
+package com.zhang.test.domain.strategy;
 
 import com.zhang.domain.strategy.service.rule.chain.ILogicChain;
 import com.zhang.domain.strategy.service.rule.chain.facotry.DefaultChainFactory;

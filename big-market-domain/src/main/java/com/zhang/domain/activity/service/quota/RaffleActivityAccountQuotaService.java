@@ -1,13 +1,13 @@
-package com.zhang.domain.activity.service;
+package com.zhang.domain.activity.service.quota;
 
-import com.zhang.domain.activity.model.aggregate.CreateOrderAggregate;
+import com.zhang.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.zhang.domain.activity.model.entity.*;
 import com.zhang.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.zhang.domain.activity.model.valobj.OrderStateVO;
 import com.zhang.domain.activity.repository.IActivityRepository;
-import com.zhang.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.zhang.domain.activity.service.IRaffleActivitySkuStockService;
+import com.zhang.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import com.zhang.domain.support.id.IIdGenerator;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -16,22 +16,22 @@ import java.util.Date;
  * @description 抽奖活动服务
  */
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock {
+public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
 
     private final IIdGenerator iIdGenerator;
 
-    public RaffleActivityService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory, IIdGenerator iIdGenerator) {
+    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory, IIdGenerator iIdGenerator) {
         super(activityRepository, defaultActivityChainFactory);
         this.iIdGenerator = iIdGenerator;
     }
 
     @Override
-    protected void doSaveOrder(CreateOrderAggregate createOrderAggregate) {
-        activityRepository.doSaveOrder(createOrderAggregate);
+    protected void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate) {
+        activityRepository.doSaveOrder(createQuotaOrderAggregate);
     }
 
     @Override
-    protected CreateOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
+    protected CreateQuotaOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
         // 订单实体对象
         ActivityOrderEntity activityOrderEntity = new ActivityOrderEntity();
         activityOrderEntity.setUserId(skuRechargeEntity.getUserId());
@@ -49,7 +49,7 @@ public class RaffleActivityService extends AbstractRaffleActivity implements ISk
         activityOrderEntity.setOutBusinessNo(skuRechargeEntity.getOutBusinessNo());
 
         // 构建聚合对象
-        return CreateOrderAggregate.builder()
+        return CreateQuotaOrderAggregate.builder()
                 .userId(skuRechargeEntity.getUserId())
                 .activityId(activitySkuEntity.getActivityId())
                 .totalCount(activityCountEntity.getTotalCount())

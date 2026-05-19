@@ -1,16 +1,12 @@
-package com.zhang.test.infrastructure.activity;
+package com.zhang.test.domain.activity;
 
-import com.alibaba.fastjson.JSON;
-import com.zhang.domain.activity.model.entity.ActivityOrderEntity;
-import com.zhang.domain.activity.model.entity.ActivityShopCartEntity;
 import com.zhang.domain.activity.model.entity.SkuRechargeEntity;
-import com.zhang.domain.activity.service.IRaffleOrder;
+import com.zhang.domain.activity.service.IRaffleActivityAccountQuotaService;
 import com.zhang.domain.activity.service.armory.IActivityArmory;
 import com.zhang.domain.support.id.IIdGenerator;
 import com.zhang.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.checkerframework.common.value.qual.StringVal;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,47 +18,37 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * @Author: ZhangJunjie
- * @Description: TODO
- * @DateTime: 2026/5/16 22:33
+ * @Description:  抽奖活动参与服务测试
+ * @DateTime: 2026/5/19 10:18
  **/
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class RaffleOrderTest {
-
-    @Resource
-    private IRaffleOrder raffleOrder;
+public class RaffleActivityAccountQuotaServiceTest {
 
     @Resource
     private IIdGenerator iIdGenerator;
-
+    @Resource
+    private IRaffleActivityAccountQuotaService raffleActivityAccountQuotaService;
     @Resource
     private IActivityArmory activityArmory;
 
     @Before
     public void setUp() {
-        log.info("装配活动:{}", activityArmory.assembleActivitySku(9011L));
+        log.info("装配活动：{}", activityArmory.assembleActivitySku(9011L));
     }
 
     @Test
-    public void test_createRaffleActivityOrder() {
-        ActivityShopCartEntity activityShopCartEntity = new ActivityShopCartEntity();
-        activityShopCartEntity.setUserId("xiaofuge");
-        activityShopCartEntity.setSku(9011L);
-        ActivityOrderEntity raffleActivityOrder = raffleOrder.createRaffleActivityOrder(activityShopCartEntity);
-        log.info("测试结果：{}", JSON.toJSONString(raffleActivityOrder));
-    }
-
-    @Test
-    public void test_createSkuRechargeOrder01() {
+    public void test_createSkuRechargeOrder_duplicate() {
         SkuRechargeEntity skuRechargeEntity = new SkuRechargeEntity();
         skuRechargeEntity.setUserId("zjj");
         skuRechargeEntity.setSku(9011L);
-        skuRechargeEntity.setOutBusinessNo(String.valueOf(iIdGenerator.nextId()));
-        String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
-        log.info("skuRechargeEntity: {}", JSON.toJSONString(skuRechargeEntity));
-        log.info("测试结果:{}", orderId);
+        // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
+        skuRechargeEntity.setOutBusinessNo("700091009119");
+        String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
+        log.info("测试结果：{}", orderId);
     }
+
     /**
      * 测试库存消耗和最终一致更新
      * 1. raffle_activity_sku 库表库存可以设置20个
@@ -74,11 +60,11 @@ public class RaffleOrderTest {
         for (int i = 0; i < 20; i++) {
             try {
                 SkuRechargeEntity skuRechargeEntity = new SkuRechargeEntity();
-                skuRechargeEntity.setUserId("xiaofuge");
+                skuRechargeEntity.setUserId("zjj");
                 skuRechargeEntity.setSku(9011L);
                 // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
                 skuRechargeEntity.setOutBusinessNo(RandomStringUtils.randomNumeric(12));
-                String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+                String orderId = raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
                 log.info("测试结果：{}", orderId);
             } catch (AppException e) {
                 log.warn(e.getInfo());
@@ -87,8 +73,5 @@ public class RaffleOrderTest {
 
         new CountDownLatch(1).await();
     }
-
-
-
 
 }

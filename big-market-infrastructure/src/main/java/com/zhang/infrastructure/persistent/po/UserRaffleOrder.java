@@ -1,6 +1,9 @@
 package com.zhang.infrastructure.persistent.po;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -9,6 +12,9 @@ import java.util.Date;
  * @description 用户抽奖订单表
  */
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserRaffleOrder {
     /**
      * 用户ID
