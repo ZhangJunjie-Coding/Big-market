@@ -27,6 +27,4 @@ public abstract class BaseEvent<T> {
         private Date timestamp;
         private T data;
     }
-
-
 }
