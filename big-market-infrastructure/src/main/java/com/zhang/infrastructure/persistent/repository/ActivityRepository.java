@@ -24,8 +24,11 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 /**
  * @Author: ZhangJunjie
@@ -443,5 +446,24 @@ public class ActivityRepository implements IActivityRepository {
                 .build();
     }
 
+    @Override
+    public List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId) {
+
+        List<RaffleActivitySku> raffleActivitySkus = raffleActivitySkuDao.queryActivitySkuListByActivityId(activityId);
+
+        if (null != raffleActivitySkus && raffleActivitySkus.size() != 0) {
+            List<ActivitySkuEntity> collect = raffleActivitySkus.stream().map(raffleActivitySku -> {
+                return ActivitySkuEntity.builder()
+                        .sku(raffleActivitySku.getSku())
+                        .activityId(raffleActivitySku.getActivityId())
+                        .activityCountId(raffleActivitySku.getActivityCountId())
+                        .stockCount(raffleActivitySku.getStockCount())
+                        .stockCountSurplus(raffleActivitySku.getStockCountSurplus())
+                        .build();
+            }).collect(Collectors.toList());
+            return collect;
+        }
+        return Collections.EMPTY_LIST;
+    }
 
 }

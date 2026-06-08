@@ -6,6 +6,7 @@ import com.zhang.domain.activity.model.entity.*;
 import com.zhang.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @description 活动仓储接口
@@ -48,4 +49,7 @@ public interface IActivityRepository {
     ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
 
     ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
+
+    List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId);
+
 }

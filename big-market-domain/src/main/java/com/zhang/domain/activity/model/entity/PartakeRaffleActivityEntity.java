@@ -1,6 +1,9 @@
 package com.zhang.domain.activity.model.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @Author: ZhangJunjie
@@ -8,6 +11,9 @@ import lombok.Data;
  * @DateTime: 2026/5/18 16:02
  **/
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class PartakeRaffleActivityEntity {
 
     /**
