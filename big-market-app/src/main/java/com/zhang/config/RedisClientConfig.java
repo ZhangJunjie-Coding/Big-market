@@ -2,6 +2,7 @@ package com.zhang.config;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
+import org.redisson.codec.JsonJacksonCodec;
 import org.redisson.config.Config;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -20,6 +21,7 @@ public class RedisClientConfig {
     @Bean("redissonClient")
     public RedissonClient redissonClient(ConfigurableApplicationContext applicationContext, RedisClientConfigProperties properties) {
         Config config = new Config();
+        config.setCodec(JsonJacksonCodec.INSTANCE);
         config.useSingleServer()
                 .setAddress("redis://" + properties.getHost() +":" + properties.getPort())
                 .setConnectionPoolSize(properties.getPoolSize())
