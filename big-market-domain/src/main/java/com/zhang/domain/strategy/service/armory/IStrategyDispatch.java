@@ -1,5 +1,7 @@
 package com.zhang.domain.strategy.service.armory;
 
+import java.util.Date;
+
 /**
  * @Author: ZhangJunjie
  * @Description: 策略抽奖的调度
@@ -31,8 +33,9 @@ public interface IStrategyDispatch {
      *
      * @param strategyId 策略ID
      * @param awardId    奖品ID
+     * @param endDateTime 活动到期时间
      * @return 扣减结果
      */
-    Boolean subtractionAwardStock(Long strategyId, Integer awardId);
+    Boolean subtractionAwardStock(Long strategyId, Integer awardId, Date endDateTime);
 
 }
