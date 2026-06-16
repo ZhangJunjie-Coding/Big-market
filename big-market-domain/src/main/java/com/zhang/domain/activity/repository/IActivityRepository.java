@@ -53,4 +53,14 @@ public interface IActivityRepository {
     List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId);
 
     Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId);
+
+    /**
+     * 标记 sku 库存已归零（加入 Redis Set）
+     */
+    void markActivitySkuStockZero(Long sku);
+
+    /**
+     * 判断 sku 库存是否已归零
+     */
+    boolean isActivitySkuStockZero(Long sku);
 }

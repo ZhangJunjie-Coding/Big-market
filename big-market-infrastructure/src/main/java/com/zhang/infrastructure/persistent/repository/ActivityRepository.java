@@ -370,4 +370,16 @@ public class ActivityRepository implements IActivityRepository {
         return null == dayPartakeCount ? 0 : dayPartakeCount;
     }
 
+
+    @Override
+    public void markActivitySkuStockZero(Long sku) {
+        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_STOCK_ZERO_SET_KEY + sku;
+        redisService.setValue(cacheKey, "1", TimeUnit.HOURS.toMillis(24));
+    }
+
+    @Override
+    public boolean isActivitySkuStockZero(Long sku) {
+        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_STOCK_ZERO_SET_KEY + sku;
+        return redisService.isExists(cacheKey);
+    }
 }

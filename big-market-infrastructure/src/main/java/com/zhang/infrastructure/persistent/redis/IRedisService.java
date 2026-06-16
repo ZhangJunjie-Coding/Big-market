@@ -1,8 +1,8 @@
 package com.zhang.infrastructure.persistent.redis;
 
 
-
 import org.redisson.api.*;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -267,5 +267,14 @@ public interface IRedisService {
     Boolean setNx(String key);
 
     Boolean setNx(String key, long expired, TimeUnit timeUnit);
+
+    /**
+     * 设置指定 key 的过期时间
+     *
+     * @param key      键
+     * @param timeout  过期时长
+     * @param timeUnit 时间单位
+     */
+    void setExpire(String key, long timeout, TimeUnit timeUnit);
 
 }

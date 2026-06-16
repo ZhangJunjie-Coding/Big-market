@@ -177,4 +177,9 @@ public class RedissonService implements IRedisService {
         return redissonClient.getBucket(key).trySet("lock", expired, timeUnit);
     }
 
+    @Override
+    public void setExpire(String key, long timeout, TimeUnit timeUnit) {
+        redissonClient.getBucket(key).expire(timeout, timeUnit);
+    }
+
 }

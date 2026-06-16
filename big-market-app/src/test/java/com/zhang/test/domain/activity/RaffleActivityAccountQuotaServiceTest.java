@@ -2,6 +2,7 @@ package com.zhang.test.domain.activity;
 
 import com.zhang.domain.activity.model.entity.SkuRechargeEntity;
 import com.zhang.domain.activity.service.IRaffleActivityAccountQuotaService;
+import com.zhang.domain.activity.service.IRaffleActivitySkuStockService;
 import com.zhang.domain.activity.service.armory.IActivityArmory;
 import com.zhang.domain.support.id.IIdGenerator;
 import com.zhang.types.exception.AppException;
@@ -30,6 +31,10 @@ public class RaffleActivityAccountQuotaServiceTest {
     private IIdGenerator iIdGenerator;
     @Resource
     private IRaffleActivityAccountQuotaService raffleActivityAccountQuotaService;
+
+    @Resource
+    private IRaffleActivitySkuStockService skuStock;
+
     @Resource
     private IActivityArmory activityArmory;
 
@@ -73,5 +78,42 @@ public class RaffleActivityAccountQuotaServiceTest {
 
         new CountDownLatch(1).await();
     }
+
+
+    /**
+     * 测试归零标记：标记后 isActivitySkuStockZero 返回 true
+     */
+    @Test
+    public void test_markActivitySkuStockZero() {
+        Long testSku = 9999L;
+
+        // 标记前：应该返回 false
+        boolean before = skuStock.isActivitySkuStockZero(testSku);
+        log.info("标记前 sku:{} 是否已归零: {}", testSku, before);
+        assert !before;
+
+        // 标记
+        skuStock.markActivitySkuStockZero(testSku);
+
+        // 标记后：应该返回 true
+        boolean after = skuStock.isActivitySkuStockZero(testSku);
+        log.info("标记后 sku:{} 是否已归零: {}", testSku, after);
+        assert after;
+    }
+
+    /**
+     * 测试未标记的 SKU 不受影响
+     */
+    @Test
+    public void test_isActivitySkuStockZero_notMarked() {
+        Long testSku = 8888L;
+
+        // 从未标记过的 SKU 应该返回 false
+        boolean result = skuStock.isActivitySkuStockZero(testSku);
+        log.info("未标记的 sku:{} 是否已归零: {}", testSku, result);
+        assert !result;
+    }
+
+
 
 }

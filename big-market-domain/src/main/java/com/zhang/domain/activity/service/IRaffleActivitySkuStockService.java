@@ -37,4 +37,13 @@ public interface IRaffleActivitySkuStockService {
     void clearActivitySkuStock(Long sku);
 
 
+    /**
+     * 标记 sku 库存已归零
+     */
+    void markActivitySkuStockZero(Long sku);
+
+    /**
+     * 判断 sku 库存是否已归零
+     */
+    boolean isActivitySkuStockZero(Long sku);
 }

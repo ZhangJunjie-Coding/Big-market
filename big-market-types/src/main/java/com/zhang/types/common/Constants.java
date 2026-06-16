@@ -25,6 +25,7 @@ public class Constants {
         public static String STRATEGY_RULE_WEIGHT_KEY = "strategy_rule_weight_key_";
         public static String ACTIVITY_SKU_COUNT_QUERY_KEY = "activity_sku_count_query_key";
         public static String ACTIVITY_SKU_STOCK_COUNT_KEY = "activity_sku_stock_count_key_";
+        public static String ACTIVITY_SKU_STOCK_ZERO_SET_KEY = "activity_sku_stock_zero_set_key_";
         public static String ACTIVITY_SKU_COUNT_CLEAR_KEY = "activity_sku_count_clear_key_";
         public static String ACTIVITY_ACCOUNT_LOCK = "activity_account_lock_";
         public static String ACTIVITY_ACCOUNT_UPDATE_LOCK = "activity_account_update_lock_";

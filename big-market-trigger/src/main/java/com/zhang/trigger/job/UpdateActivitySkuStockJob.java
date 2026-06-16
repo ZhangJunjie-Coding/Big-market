@@ -25,7 +25,13 @@ public class UpdateActivitySkuStockJob {
         try {
 //            log.info("定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】");
             ActivitySkuStockKeyVO activitySkuStockKeyVO = skuStock.takeQueueValue();
-            if (null == activitySkuStockKeyVO) return;
+            if (null == activitySkuStockKeyVO)
+                return;
+            // 已经归零的 sku直接跳过 不更新DB
+            if(skuStock.isActivitySkuStockZero(activitySkuStockKeyVO.getSku())){
+                log.info("定时任务，sku库存已归零，跳过更新 sku:{}", activitySkuStockKeyVO.getSku());
+                return;
+            }
             log.info("定时任务，更新活动sku库存 sku:{} activityId:{}", activitySkuStockKeyVO.getSku(), activitySkuStockKeyVO.getActivityId());
             skuStock.updateActivitySkuStock(activitySkuStockKeyVO.getSku());
         } catch (Exception e) {

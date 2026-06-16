@@ -34,10 +34,13 @@ public class ActivitySkuStockZeroCustomer {
             BaseEvent.EventMessage<Long> eventMessage = JSON.parseObject(message, new TypeReference<BaseEvent.EventMessage<Long>>() {
             }.getType());
             Long sku = eventMessage.getData();
-            // 更新库存
+            // 更新数据库库存清零
             skuStock.clearActivitySkuStock(sku);
+            // 标记此SKU已归零，后续定时任务消费队列时会跳过
+            skuStock.markActivitySkuStockZero(sku);
+
 //            // 清空队列 「此时就不需要延迟更新数据库记录了」 //todo 清空时需要设定SKu标识，不能全部清空
-            skuStock.clearQueueValue();
+//            skuStock.clearQueueValue();
         } catch (Exception e) {
             log.error("监听活动sku库存消耗为0消息，消费失败 topic: {} message: {}", topic, message);
             throw e;
