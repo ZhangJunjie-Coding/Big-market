@@ -54,8 +54,8 @@ public class BehaviorRebateService implements IBehaviorRebateService {
                     // userID
                     .userId(behaviorEntity.getUserId())
                     // 这个可以使用雪花算法来生成业务ID
-//                    .orderId(String.valueOf(iIdGenerator.nextId()))
-                    .orderId(RandomStringUtils.randomNumeric(12))
+                    .orderId(String.valueOf(iIdGenerator.nextId()))
+//                    .orderId(RandomStringUtils.randomNumeric(12))
                     .behaviorType(dailyBehaviorRebateVO.getBehaviorType())
                     .rebateDesc(dailyBehaviorRebateVO.getRebateDesc())
                     .rebateType(dailyBehaviorRebateVO.getRebateType())

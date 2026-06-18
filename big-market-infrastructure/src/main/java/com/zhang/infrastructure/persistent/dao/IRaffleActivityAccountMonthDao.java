@@ -18,4 +18,6 @@ public interface IRaffleActivityAccountMonthDao {
 
     @DBRouter
     RaffleActivityAccountMonth queryActivityAccountMonthByUserId(RaffleActivityAccountMonth raffleActivityAccountMonth);
+
+    int addAccountQuota(RaffleActivityAccountMonth raffleActivityAccountMonth);
 }

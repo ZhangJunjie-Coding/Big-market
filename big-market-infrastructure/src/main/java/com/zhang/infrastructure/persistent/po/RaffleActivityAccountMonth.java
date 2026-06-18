@@ -1,10 +1,12 @@
 package com.zhang.infrastructure.persistent.po;
 
+import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -16,6 +18,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RaffleActivityAccountMonth {
+    private static final SimpleDateFormat dateFormatMonth = new SimpleDateFormat("yyyy-MM");
 
     /**
      * 自增ID
@@ -49,5 +52,9 @@ public class RaffleActivityAccountMonth {
      * 更新时间
      */
     private Date updateTime;
+
+    public String currentMonth(){
+        return dateFormatMonth.format(new Date());
+    }
 
 }
