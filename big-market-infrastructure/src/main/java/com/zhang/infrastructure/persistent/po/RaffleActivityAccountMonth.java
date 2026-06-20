@@ -53,7 +53,7 @@ public class RaffleActivityAccountMonth {
      */
     private Date updateTime;
 
-    public String currentMonth(){
+    public static String currentMonth(){
         return dateFormatMonth.format(new Date());
     }
 

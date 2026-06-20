@@ -11,18 +11,21 @@ import org.apache.ibatis.annotations.Mapper;
  **/
 @Mapper
 public interface IRaffleActivityAccountDao {
-    int updateAccountQuota(RaffleActivityAccount raffleActivityAccount);
-
     void insert(RaffleActivityAccount raffleActivityAccount);
+
+    int updateAccountQuota(RaffleActivityAccount raffleActivityAccount);
 
     @DBRouter
     RaffleActivityAccount queryActivityAccountByUserId(RaffleActivityAccount raffleActivityAccountReq);
 
-    int updateActivityAccountSubtractionQuota(RaffleActivityAccount build);
+    int updateActivityAccountSubtractionQuota(RaffleActivityAccount raffleActivityAccount);
+
+    int updateActivityAccountMonthSubtractionQuota(RaffleActivityAccount raffleActivityAccount);
+
+    int updateActivityAccountDaySubtractionQuota(RaffleActivityAccount raffleActivityAccount);
 
     void updateActivityAccountMonthSurplusImageQuota(RaffleActivityAccount raffleActivityAccount);
 
-    void updateActivityDaySurplusImageQuota(RaffleActivityAccount raffleActivityAccount);
+    void updateActivityAccountDaySurplusImageQuota(RaffleActivityAccount raffleActivityAccount);
 
-    void updateActivityAccountDaySurplusImageQuota(RaffleActivityAccount build);
 }
