@@ -63,4 +63,8 @@ public interface IActivityRepository {
      * 判断 sku 库存是否已归零
      */
     boolean isActivitySkuStockZero(Long sku);
+
+    Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
+
+    ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
 }

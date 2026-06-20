@@ -27,8 +27,8 @@ public class ApiTest {
 
 
     @Test
-    public void testIdGeneration(){
-        for (int i = 0;i<5;i++){
+    public void testIdGeneration() {
+        for (int i = 0; i < 5; i++) {
             System.out.println(snowflakeIdWorker.nextId());
         }
     }
@@ -39,20 +39,26 @@ public class ApiTest {
     }
 
     @Test
-    public void test01(){
-        RMap<Object, Object> map= redisService.getMap("strategy_id_100002");
-        map.put(1,101);
-        map.put(2,101);
-        map.put(3,101);
-        map.put(4,102);
-        map.put(5,102);
-        map.put(6,102);
-        map.put(7,103);
-        map.put(8,103);
-        map.put(9,104);
-        map.put(10,105);
-        log.info("测试结果: {}",redisService.getFromMap("strategy_id_100002",1).toString());
+    public void test01() {
+        RMap<Object, Object> map = redisService.getMap("strategy_id_100002");
+        map.put(1, 101);
+        map.put(2, 101);
+        map.put(3, 101);
+        map.put(4, 102);
+        map.put(5, 102);
+        map.put(6, 102);
+        map.put(7, 103);
+        map.put(8, 103);
+        map.put(9, 104);
+        map.put(10, 105);
+        log.info("测试结果: {}", redisService.getFromMap("strategy_id_100002", 1).toString());
 
+    }
+
+    @Test
+    public void test02() {
+        int number = 1;
+        System.out.println(number << 30);
     }
 
 }
