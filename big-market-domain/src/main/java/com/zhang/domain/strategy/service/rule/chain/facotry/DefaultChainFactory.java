@@ -5,6 +5,7 @@ import com.zhang.domain.strategy.repository.IStrategyRepository;
 import com.zhang.domain.strategy.service.rule.chain.ILogicChain;
 import lombok.*;
 import org.springframework.stereotype.Service;
+
 import java.util.Map;
 
 @Service
@@ -20,6 +21,7 @@ public class DefaultChainFactory {
 
     /**
      * 通过策略ID，构建责任链
+     *
      * @param strategyId 策略ID
      * @return LogicChain
      */
@@ -48,10 +50,19 @@ public class DefaultChainFactory {
     @AllArgsConstructor
     @NoArgsConstructor
     public static class StrategyAwardVO {
-        /** 抽奖奖品ID - 内部流转使用 */
+        /**
+         * 抽奖奖品ID - 内部流转使用
+         */
         private Integer awardId;
-        /**  */
+        /**
+         * 
+         */
         private String logicModel;
+
+        /**
+         * 抽奖奖品规则
+         */
+        private String awardRuleValue;
     }
 
     @Getter
