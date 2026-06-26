@@ -12,6 +12,8 @@ import com.zhang.types.model.Response;
  * @DateTime: 2026/6/8 9:49
  **/
 public interface IRaffleActivityService {
+
+    /**测试**/
     /**
      * 活动装配，数据预热缓存
      *
