@@ -1,9 +1,6 @@
 package com.zhang.domain.activity.service;
 
-import com.zhang.domain.activity.model.entity.ActivityAccountEntity;
-import com.zhang.domain.activity.model.entity.ActivityOrderEntity;
-import com.zhang.domain.activity.model.entity.ActivityShopCartEntity;
-import com.zhang.domain.activity.model.entity.SkuRechargeEntity;
+import com.zhang.domain.activity.model.entity.*;
 
 /**
  * @Author: ZhangJunjie
@@ -29,6 +26,14 @@ public interface IRaffleActivityAccountQuotaService {
      * @return 活动ID
      */
     String createOrder(SkuRechargeEntity skuRechargeEntity);
+
+    /**
+     * 订单出货 - 积分充值
+     * @param deliveryOrderEntity 出货单实体对象
+     */
+    void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
+
+
 
     /**
      * 查询活动账户 - 总，参与次数
