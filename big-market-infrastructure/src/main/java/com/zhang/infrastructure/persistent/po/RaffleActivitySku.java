@@ -2,12 +2,12 @@ package com.zhang.infrastructure.persistent.po;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * @author 俊杰
  * @description 抽奖活动sku持久化对象
- *
  */
 @Data
 public class RaffleActivitySku {
@@ -32,6 +32,10 @@ public class RaffleActivitySku {
      * 剩余库存
      */
     private Integer stockCountSurplus;
+    /**
+     * 商品金额 【积分】
+     */
+    private BigDecimal productAmount;
     /**
      * 创建时间
      */

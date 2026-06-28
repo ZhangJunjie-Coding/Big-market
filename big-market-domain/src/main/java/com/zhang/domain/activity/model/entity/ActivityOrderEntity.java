@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -16,6 +17,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ActivityOrderEntity {
+
 
 
     /**
@@ -69,6 +71,11 @@ public class ActivityOrderEntity {
     private Integer monthCount;
 
     /**
+     * 支付金额
+     */
+    private BigDecimal payAmount;
+
+    /**
      * 订单状态
      */
     private OrderStateVO state;
@@ -77,6 +84,7 @@ public class ActivityOrderEntity {
      * 业务仿重ID - 外部透传的，确保幂等
      */
     private String outBusinessNo;
+
 
 
 }

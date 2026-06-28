@@ -6,11 +6,13 @@ import com.zhang.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.zhang.domain.activity.model.valobj.OrderStateVO;
 import com.zhang.domain.activity.repository.IActivityRepository;
 import com.zhang.domain.activity.service.IRaffleActivitySkuStockService;
+import com.zhang.domain.activity.service.quota.policy.ITradePolicy;
 import com.zhang.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import com.zhang.domain.support.id.IIdGenerator;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.Map;
 
 /**
  * @description 抽奖活动服务
@@ -20,15 +22,11 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
 
     private final IIdGenerator iIdGenerator;
 
-    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory, IIdGenerator iIdGenerator) {
-        super(activityRepository, defaultActivityChainFactory);
+    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory, Map<String, ITradePolicy> tradPolicyGroup, IIdGenerator iIdGenerator) {
+        super(activityRepository, defaultActivityChainFactory, tradPolicyGroup);
         this.iIdGenerator = iIdGenerator;
     }
 
-    @Override
-    protected void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate) {
-        activityRepository.doSaveOrder(createQuotaOrderAggregate);
-    }
 
     @Override
     protected CreateQuotaOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
@@ -45,7 +43,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
         activityOrderEntity.setTotalCount(activityCountEntity.getTotalCount());
         activityOrderEntity.setDayCount(activityCountEntity.getDayCount());
         activityOrderEntity.setMonthCount(activityCountEntity.getMonthCount());
-        activityOrderEntity.setState(OrderStateVO.completed);
+        activityOrderEntity.setPayAmount(activitySkuEntity.getProductAmount());
         activityOrderEntity.setOutBusinessNo(skuRechargeEntity.getOutBusinessNo());
 
         // 构建聚合对象
@@ -82,6 +80,12 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     }
 
     @Override
+    public void updateOrder(DeliveryOrderEntity deliveryOrderEntity) {
+        activityRepository.updateOrder(deliveryOrderEntity);
+    }
+
+
+    @Override
     public Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId) {
         return activityRepository.queryRaffleActivityAccountPartakeCount(activityId, userId);
     }
@@ -89,7 +93,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
 
     @Override
     public Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId) {
-        return activityRepository.queryRaffleActivityAccountDayPartakeCount(activityId,userId);
+        return activityRepository.queryRaffleActivityAccountDayPartakeCount(activityId, userId);
     }
 
     @Override
