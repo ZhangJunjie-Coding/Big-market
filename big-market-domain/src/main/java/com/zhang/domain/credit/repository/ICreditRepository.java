@@ -1,6 +1,7 @@
 package com.zhang.domain.credit.repository;
 
 import com.zhang.domain.credit.model.aggregate.TradeAggregate;
+import com.zhang.domain.credit.model.entity.CreditAccountEntity;
 
 /**
  * @Author: ZhangJunjie
@@ -11,4 +12,5 @@ public interface ICreditRepository {
 
     void saveUserCreditTradeOrder(TradeAggregate tradeAggregate);
 
+    CreditAccountEntity queryUserCreditAccount(String userId);
 }
