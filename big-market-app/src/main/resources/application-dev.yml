@@ -123,3 +123,15 @@ spring:
       send_award: send_award
       send_rebate: send_rebate
       credit_adjust_success: credit_adjust_success
+dubbo:
+  application:
+    name: big-market
+    version: 1.0
+  registry:
+    id: nacos-registry
+    address: nacos://223.109.142.81:8848
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.zhang.trigger.api
