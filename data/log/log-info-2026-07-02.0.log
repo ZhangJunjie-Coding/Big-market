@@ -1,0 +1,857 @@
+26-07-02.11:03:51.702 [main            ] INFO  Application            - Starting Application using Java 1.8.0_131 on Zhang-Desktop with PID 139256 (D:\Code\big-market\big-market-app\target\classes started by ZhangJunjie in D:\Code\big-market)
+26-07-02.11:03:51.704 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-07-02.11:03:53.441 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-07-02.11:03:53.443 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-07-02.11:03:53.473 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+26-07-02.11:03:54.034 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-07-02.11:03:54.040 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-07-02.11:03:54.041 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-07-02.11:03:54.041 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-07-02.11:03:54.152 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-07-02.11:03:54.152 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2413 ms
+26-07-02.11:03:54.505 [main            ] INFO  Version                - Redisson 3.23.4
+26-07-02.11:03:55.089 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 223.109.142.81/223.109.142.81:16379
+26-07-02.11:03:55.224 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 223.109.142.81/223.109.142.81:16379
+26-07-02.11:03:56.620 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-07-02.11:03:56.667 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-07-02.11:03:56.676 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-07-02.11:03:56.677 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [223.109.142.81:5672]
+26-07-02.11:03:56.790 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#33d28f0a:0/SimpleConnection@1b1ea1d9 [delegate=amqp://admin@223.109.142.81:5672/, localPort= 5987]
+26-07-02.11:03:56.983 [http-nio-8091-exec-4] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-07-02.11:03:56.983 [http-nio-8091-exec-4] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-07-02.11:03:56.984 [http-nio-8091-exec-4] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-07-02.11:03:57.029 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: null
+26-07-02.11:03:57.029 [http-nio-8091-exec-11] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: null
+26-07-02.11:03:57.047 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:03:57.047 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:03:57.047 [http-nio-8091-exec-20] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:03:57.047 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:03:57.050 [http-nio-8091-exec-11] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-07-02.11:03:57.052 [http-nio-8091-exec-28] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-07-02.11:03:57.170 [main            ] INFO  Application            - Started Application in 5.885 seconds (JVM running for 6.735)
+26-07-02.11:03:57.424 [http-nio-8091-exec-28] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-07-02.11:03:57.595 [http-nio-8091-exec-11] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-07-02.11:03:57.784 [RMI TCP Connection(3)-10.245.30.163] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-07-02.11:03:58.025 [RMI TCP Connection(3)-10.245.30.163] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-07-02.11:03:58.274 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: null, orders.size: 0
+26-07-02.11:03:58.278 [http-nio-8091-exec-11] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: null, orders.size: 0
+26-07-02.11:03:58.288 [http-nio-8091-exec-6] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-07-02.11:03:58.288 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-07-02.11:03:58.350 [http-nio-8091-exec-20] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:03:58.350 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:03:58.350 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:03:58.350 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:03:58.354 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-07-02.11:03:58.354 [http-nio-8091-exec-34] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-07-02.11:03:58.401 [http-nio-8091-exec-34] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: null
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
+	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+26-07-02.11:03:58.401 [http-nio-8091-exec-18] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: null
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
+	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+26-07-02.11:03:58.403 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-07-02.11:03:58.403 [http-nio-8091-exec-6] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-07-02.11:05:20.251 [http-nio-8091-exec-26] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:20.251 [http-nio-8091-exec-25] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:20.252 [http-nio-8091-exec-27] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:20.253 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:20.277 [http-nio-8091-exec-30] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-07-02.11:05:20.277 [http-nio-8091-exec-50] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-07-02.11:05:20.296 [http-nio-8091-exec-50] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-07-02.11:05:20.299 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: null
+26-07-02.11:05:20.312 [http-nio-8091-exec-30] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:0
+26-07-02.11:05:20.316 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: null, orders.size: 0
+26-07-02.11:05:20.317 [http-nio-8091-exec-32] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-07-02.11:05:20.318 [http-nio-8091-exec-33] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
+26-07-02.11:05:20.334 [http-nio-8091-exec-33] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
+26-07-02.11:05:20.336 [http-nio-8091-exec-32] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-07-02.11:05:20.337 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-07-02.11:05:20.339 [http-nio-8091-exec-35] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: null
+26-07-02.11:05:20.351 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:20.353 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
+26-07-02.11:05:20.355 [http-nio-8091-exec-25] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:20.357 [http-nio-8091-exec-37] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-07-02.11:05:20.370 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:0
+26-07-02.11:05:20.373 [http-nio-8091-exec-38] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-07-02.11:05:20.374 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
+26-07-02.11:05:20.374 [http-nio-8091-exec-27] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:20.374 [http-nio-8091-exec-35] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: null, orders.size: 0
+26-07-02.11:05:20.374 [http-nio-8091-exec-37] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: null
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
+	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+26-07-02.11:05:20.382 [http-nio-8091-exec-26] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:20.390 [http-nio-8091-exec-38] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: null
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
+	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+26-07-02.11:05:56.976 [http-nio-8091-exec-9] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:56.976 [http-nio-8091-exec-39] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:56.977 [http-nio-8091-exec-41] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:56.977 [http-nio-8091-exec-21] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: null, activityId: 0
+26-07-02.11:05:57.005 [http-nio-8091-exec-44] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-07-02.11:05:57.005 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-07-02.11:05:57.036 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-07-02.11:05:57.038 [http-nio-8091-exec-44] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:0
+26-07-02.11:05:57.038 [http-nio-8091-exec-45] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: null
+26-07-02.11:05:57.042 [http-nio-8091-exec-46] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-07-02.11:05:57.055 [http-nio-8091-exec-45] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: null, orders.size: 0
+26-07-02.11:05:57.057 [http-nio-8091-exec-47] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-07-02.11:05:57.068 [http-nio-8091-exec-46] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-07-02.11:05:57.070 [http-nio-8091-exec-48] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: null
+26-07-02.11:05:57.073 [http-nio-8091-exec-47] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:0
+26-07-02.11:05:57.074 [http-nio-8091-exec-49] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
+26-07-02.11:05:57.090 [http-nio-8091-exec-41] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:57.092 [http-nio-8091-exec-29] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-07-02.11:05:57.093 [http-nio-8091-exec-21] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:57.094 [http-nio-8091-exec-49] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
+26-07-02.11:05:57.094 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
+26-07-02.11:05:57.095 [http-nio-8091-exec-2] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-07-02.11:05:57.098 [http-nio-8091-exec-9] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:57.108 [http-nio-8091-exec-29] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: null
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
+	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+26-07-02.11:05:57.108 [http-nio-8091-exec-39] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: null, activityId: 0, response: {"code":"0000","data":[],"info":"调用成功"}
+26-07-02.11:05:57.113 [http-nio-8091-exec-2] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: null
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
+	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+26-07-02.11:05:57.116 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
+26-07-02.11:05:57.116 [http-nio-8091-exec-48] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: null, orders.size: 0
+26-07-02.11:06:20.465 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:20.465 [http-nio-8091-exec-15] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:20.465 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:20.466 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:20.484 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:06:20.484 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:20.505 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:85.85
+26-07-02.11:06:20.507 [http-nio-8091-exec-34] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:06:20.526 [http-nio-8091-exec-34] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 0
+26-07-02.11:06:20.528 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:20.544 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":960,"dayCountSurplus":960,"monthCount":960,"monthCountSurplus":960,"totalCount":960,"totalCountSurplus":861}
+26-07-02.11:06:20.546 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:06:20.560 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:85.85
+26-07-02.11:06:20.562 [http-nio-8091-exec-6] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:06:20.576 [http-nio-8091-exec-6] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 0
+26-07-02.11:06:20.578 [http-nio-8091-exec-23] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-07-02.11:06:20.583 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":960,"dayCountSurplus":960,"monthCount":960,"monthCountSurplus":960,"totalCount":960,"totalCountSurplus":861}
+26-07-02.11:06:20.585 [http-nio-8091-exec-22] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:06:20.627 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:20.628 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:20.629 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-07-02.11:06:20.630 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:06:20.632 [http-nio-8091-exec-23] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":100,"monthCount":100,"totalCount":100},"activityCountId":11101,"productAmount":1.68,"sku":9011,"stockCount":100000,"stockCountSurplus":99888}]
+26-07-02.11:06:20.638 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:20.642 [http-nio-8091-exec-15] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:20.670 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":100,"monthCount":100,"totalCount":100},"activityCountId":11101,"productAmount":1.68,"sku":9011,"stockCount":100000,"stockCountSurplus":99888}]
+26-07-02.11:06:20.809 [http-nio-8091-exec-22] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":99}],"info":"调用成功"}
+26-07-02.11:06:20.835 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":99}],"info":"调用成功"}
+26-07-02.11:06:23.931 [http-nio-8091-exec-50] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:06:23.931 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:06:23.931 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:23.959 [http-nio-8091-exec-50] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 0
+26-07-02.11:06:23.966 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:85.85
+26-07-02.11:06:23.982 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":960,"dayCountSurplus":960,"monthCount":960,"monthCountSurplus":960,"totalCount":960,"totalCountSurplus":861}
+26-07-02.11:06:25.740 [http-nio-8091-exec-30] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:25.740 [http-nio-8091-exec-31] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:25.742 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:25.742 [http-nio-8091-exec-32] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:25.759 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:25.759 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:06:25.788 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:85.85
+26-07-02.11:06:25.792 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:06:25.806 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 0
+26-07-02.11:06:25.809 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-07-02.11:06:25.825 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:25.827 [http-nio-8091-exec-35] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:06:25.829 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":960,"dayCountSurplus":960,"monthCount":960,"monthCountSurplus":960,"totalCount":960,"totalCountSurplus":861}
+26-07-02.11:06:25.833 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:25.845 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":100,"monthCount":100,"totalCount":100},"activityCountId":11101,"productAmount":1.68,"sku":9011,"stockCount":100000,"stockCountSurplus":99888}]
+26-07-02.11:06:25.848 [http-nio-8091-exec-37] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:06:25.864 [http-nio-8091-exec-37] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:85.85
+26-07-02.11:06:25.866 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:06:25.879 [http-nio-8091-exec-35] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":99}],"info":"调用成功"}
+26-07-02.11:06:25.881 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 0
+26-07-02.11:06:25.881 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-07-02.11:06:25.882 [http-nio-8091-exec-43] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:06:25.890 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":960,"dayCountSurplus":960,"monthCount":960,"monthCountSurplus":960,"totalCount":960,"totalCountSurplus":861}
+26-07-02.11:06:25.920 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":100,"monthCount":100,"totalCount":100},"activityCountId":11101,"productAmount":1.68,"sku":9011,"stockCount":100000,"stockCountSurplus":99888}]
+26-07-02.11:06:25.935 [http-nio-8091-exec-43] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":99},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":99}],"info":"调用成功"}
+26-07-02.11:06:26.054 [http-nio-8091-exec-30] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:26.068 [http-nio-8091-exec-31] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:26.080 [http-nio-8091-exec-32] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":false,"sort":5,"waitUnLockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":false,"sort":6,"waitUnLockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":false,"sort":7,"waitUnLockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:44.061 [http-nio-8091-exec-45] INFO  RaffleActivityController - 活动抽奖 userId:xiaofuge activityId:100301
+26-07-02.11:06:44.061 [http-nio-8091-exec-45] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:45.959 [http-nio-8091-exec-45] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:1522196825312854016
+26-07-02.11:06:45.959 [http-nio-8091-exec-45] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:1522196825312854016
+26-07-02.11:06:46.037 [http-nio-8091-exec-45] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+26-07-02.11:06:46.059 [http-nio-8091-exec-45] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+26-07-02.11:06:46.059 [http-nio-8091-exec-45] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+26-07-02.11:06:46.135 [http-nio-8091-exec-45] ERROR RaffleActivityController - 活动抽奖失败 userId:xiaofuge activityId:100301
+com.zhang.types.exception.AppException: null
+	at com.zhang.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:114)
+	at com.zhang.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$ab5a3386.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.zhang.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$6481da81.getRateRange(<generated>)
+	at com.zhang.domain.strategy.service.armory.StrategyArmoryDispatch.getRandomAwardId(StrategyArmoryDispatch.java:140)
+	at com.zhang.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain.logic(RuleWeightLogicChain.java:75)
+	at com.zhang.domain.strategy.service.rule.chain.impl.BlackListLogicChain.logic(BlackListLogicChain.java:48)
+	at com.zhang.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicChain(DefaultRaffleStrategy.java:45)
+	at com.zhang.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
+	at com.zhang.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Throwable: big_market_strategy_rate_range_key_100006_70:106,107:抽奖策略配置未装配，请通过IStrategyArmory完成装配
+	at com.zhang.types.exception.AppException.<init>(AppException.java:30)
+	... 71 common frames omitted
+26-07-02.11:06:48.879 [http-nio-8091-exec-46] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:48.990 [http-nio-8091-exec-46] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":true,"sort":5,"waitUnLockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":true,"sort":6,"waitUnLockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":true,"sort":7,"waitUnLockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:06:49.776 [http-nio-8091-exec-41] INFO  RaffleActivityController - 活动装配,数据预热,开始 activityId:100301
+26-07-02.11:06:50.366 [http-nio-8091-exec-41] INFO  RaffleActivityController - 活动装配,数据预热,完成 activityId: 100301
+26-07-02.11:06:54.564 [http-nio-8091-exec-21] INFO  RaffleActivityController - 活动抽奖 userId:xiaofuge activityId:100301
+26-07-02.11:06:54.564 [http-nio-8091-exec-21] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:54.928 [http-nio-8091-exec-21] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:1522196869327880192
+26-07-02.11:06:54.928 [http-nio-8091-exec-21] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:1522196869327880192
+26-07-02.11:06:54.946 [http-nio-8091-exec-21] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+26-07-02.11:06:54.976 [http-nio-8091-exec-21] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+26-07-02.11:06:54.976 [http-nio-8091-exec-21] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+26-07-02.11:06:55.076 [http-nio-8091-exec-21] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-07-02.11:06:55.077 [http-nio-8091-exec-21] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 106 rule_weight
+26-07-02.11:06:55.359 [http-nio-8091-exec-21] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"1522196869327880192","userId":"xiaofuge"},"id":"10946838036","timestamp":1782961615128}
+26-07-02.11:06:55.390 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"1522196869327880192","userId":"xiaofuge"},"id":"10946838036","timestamp":1782961615128}
+26-07-02.11:06:55.444 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
+26-07-02.11:06:55.467 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:06:55.467 [http-nio-8091-exec-29] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:06:55.467 [http-nio-8091-exec-49] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:06:55.467 [http-nio-8091-exec-39] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:06:55.485 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:85.85
+26-07-02.11:06:55.494 [http-nio-8091-exec-29] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 0
+26-07-02.11:06:55.522 [http-nio-8091-exec-49] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":960,"dayCountSurplus":897,"monthCount":960,"monthCountSurplus":897,"totalCount":960,"totalCountSurplus":859}
+26-07-02.11:06:55.534 [http-nio-8091-exec-39] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":101}],"info":"调用成功"}
+26-07-02.11:06:57.994 [http-nio-8091-exec-2] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId: xiaofuge, activityId: 100301
+26-07-02.11:06:58.102 [http-nio-8091-exec-2] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId: xiaofuge, activityId: 100301, response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":true,"sort":5,"waitUnLockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":true,"sort":6,"waitUnLockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":true,"sort":7,"waitUnLockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-07-02.11:07:29.921 [http-nio-8091-exec-8] INFO  RaffleActivityController - 日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:30.135 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_integral_20260702","rebateConfig":"10","rebateDesc":"签到返利-积分","rebateType":"integral","userId":"xiaofuge"},"id":"81135178478","timestamp":1782961649963}
+26-07-02.11:07:30.149 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  RebateMessageConsumer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_integral_20260702","rebateConfig":"10","rebateDesc":"签到返利-积分","rebateType":"integral","userId":"xiaofuge"},"id":"81135178478","timestamp":1782961649963}
+26-07-02.11:07:30.154 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:REBATE amount:10
+26-07-02.11:07:30.204 [http-nio-8091-exec-8] INFO  RaffleActivityController - 日历签到返利完成 userId:xiaofuge orderIds:["1522197017240010752"]
+26-07-02.11:07:30.415 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":10,"orderId":"429738658948","outBusinessNo":"xiaofuge_integral_20260702","userId":"xiaofuge"},"id":"01666358633","timestamp":1782961650154}
+26-07-02.11:07:30.433 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":10,"orderId":"429738658948","outBusinessNo":"xiaofuge_integral_20260702","userId":"xiaofuge"},"id":"01666358633","timestamp":1782961650154}
+26-07-02.11:07:30.475 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:429738658948 topic: credit_adjust_success
+26-07-02.11:07:30.475 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:429738658948
+26-07-02.11:07:30.765 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:30.765 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:30.766 [http-nio-8091-exec-10] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:30.780 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:30.785 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:95.85
+26-07-02.11:07:30.818 [http-nio-8091-exec-10] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":960,"dayCountSurplus":897,"monthCount":960,"monthCountSurplus":897,"totalCount":960,"totalCountSurplus":859}
+26-07-02.11:07:43.454 [http-nio-8091-exec-13] INFO  RaffleActivityController - 积分兑换商品开始 userId:xiaofuge sku:9011
+26-07-02.11:07:43.768 [http-nio-8091-exec-13] INFO  ActivityBaseActionChain - 活动责任链-基础信息 [有效期、状态] 校验开始。sku:9011 activityId:100301
+26-07-02.11:07:43.768 [http-nio-8091-exec-13] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【检验&扣减】开始,sku:9011 activityId:100301
+26-07-02.11:07:43.801 [http-nio-8091-exec-13] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+26-07-02.11:07:43.969 [http-nio-8091-exec-13] INFO  RaffleActivityController - 积分兑换商品，创建订单完成 userId:xiaofuge sku:9011 outBusinessNo:223171240085
+26-07-02.11:07:43.969 [http-nio-8091-exec-13] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:CONVERT_SKU amount:-1.68
+26-07-02.11:07:44.244 [http-nio-8091-exec-13] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":-1.68,"orderId":"866370887073","outBusinessNo":"223171240085","userId":"xiaofuge"},"id":"35373224329","timestamp":1782961663969}
+26-07-02.11:07:44.258 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":-1.68,"orderId":"866370887073","outBusinessNo":"223171240085","userId":"xiaofuge"},"id":"35373224329","timestamp":1782961663969}
+26-07-02.11:07:44.305 [http-nio-8091-exec-13] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:866370887073 topic: credit_adjust_success
+26-07-02.11:07:44.305 [http-nio-8091-exec-13] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:866370887073
+26-07-02.11:07:44.305 [http-nio-8091-exec-13] INFO  RaffleActivityController - 积分兑换商品，支付订单完成  userId:xiaofuge sku:9011 orderId:866370887073
+26-07-02.11:07:44.662 [http-nio-8091-exec-34] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:44.662 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:44.662 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:44.662 [http-nio-8091-exec-16] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:07:44.681 [http-nio-8091-exec-34] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:94.17
+26-07-02.11:07:44.688 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:44.719 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1060,"dayCountSurplus":997,"monthCount":1060,"monthCountSurplus":997,"totalCount":1060,"totalCountSurplus":959}
+26-07-02.11:07:44.739 [http-nio-8091-exec-16] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":101}],"info":"调用成功"}
+26-07-02.11:07:44.933 [http-nio-8091-exec-6] INFO  RaffleActivityController - 积分兑换商品开始 userId:xiaofuge sku:9011
+26-07-02.11:07:44.998 [http-nio-8091-exec-6] INFO  ActivityBaseActionChain - 活动责任链-基础信息 [有效期、状态] 校验开始。sku:9011 activityId:100301
+26-07-02.11:07:44.998 [http-nio-8091-exec-6] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【检验&扣减】开始,sku:9011 activityId:100301
+26-07-02.11:07:45.036 [http-nio-8091-exec-6] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+26-07-02.11:07:45.147 [http-nio-8091-exec-6] INFO  RaffleActivityController - 积分兑换商品，创建订单完成 userId:xiaofuge sku:9011 outBusinessNo:220465136086
+26-07-02.11:07:45.147 [http-nio-8091-exec-6] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:CONVERT_SKU amount:-1.68
+26-07-02.11:07:45.524 [http-nio-8091-exec-6] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":-1.68,"orderId":"680432136377","outBusinessNo":"220465136086","userId":"xiaofuge"},"id":"78504853398","timestamp":1782961665147}
+26-07-02.11:07:45.539 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":-1.68,"orderId":"680432136377","outBusinessNo":"220465136086","userId":"xiaofuge"},"id":"78504853398","timestamp":1782961665147}
+26-07-02.11:07:45.640 [http-nio-8091-exec-6] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:680432136377 topic: credit_adjust_success
+26-07-02.11:07:45.640 [http-nio-8091-exec-6] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:680432136377
+26-07-02.11:07:45.640 [http-nio-8091-exec-6] INFO  RaffleActivityController - 积分兑换商品，支付订单完成  userId:xiaofuge sku:9011 orderId:680432136377
+26-07-02.11:07:45.997 [http-nio-8091-exec-28] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:45.997 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:45.997 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:45.997 [http-nio-8091-exec-23] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:07:46.011 [http-nio-8091-exec-28] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:46.016 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:92.49
+26-07-02.11:07:46.056 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1160,"dayCountSurplus":1097,"monthCount":1160,"monthCountSurplus":1097,"totalCount":1160,"totalCountSurplus":1059}
+26-07-02.11:07:46.070 [http-nio-8091-exec-23] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":101}],"info":"调用成功"}
+26-07-02.11:07:47.355 [http-nio-8091-exec-11] INFO  RaffleActivityController - 积分兑换商品开始 userId:xiaofuge sku:9011
+26-07-02.11:07:47.454 [http-nio-8091-exec-11] INFO  ActivityBaseActionChain - 活动责任链-基础信息 [有效期、状态] 校验开始。sku:9011 activityId:100301
+26-07-02.11:07:47.454 [http-nio-8091-exec-11] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【检验&扣减】开始,sku:9011 activityId:100301
+26-07-02.11:07:47.487 [http-nio-8091-exec-11] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+26-07-02.11:07:47.606 [http-nio-8091-exec-11] INFO  RaffleActivityController - 积分兑换商品，创建订单完成 userId:xiaofuge sku:9011 outBusinessNo:654652512203
+26-07-02.11:07:47.606 [http-nio-8091-exec-11] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:CONVERT_SKU amount:-1.68
+26-07-02.11:07:47.817 [http-nio-8091-exec-11] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":-1.68,"orderId":"029078178406","outBusinessNo":"654652512203","userId":"xiaofuge"},"id":"62264276878","timestamp":1782961667606}
+26-07-02.11:07:47.831 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":-1.68,"orderId":"029078178406","outBusinessNo":"654652512203","userId":"xiaofuge"},"id":"62264276878","timestamp":1782961667606}
+26-07-02.11:07:47.870 [http-nio-8091-exec-11] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:029078178406 topic: credit_adjust_success
+26-07-02.11:07:47.871 [http-nio-8091-exec-11] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:029078178406
+26-07-02.11:07:47.871 [http-nio-8091-exec-11] INFO  RaffleActivityController - 积分兑换商品，支付订单完成  userId:xiaofuge sku:9011 orderId:029078178406
+26-07-02.11:07:48.241 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:48.241 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:07:48.241 [http-nio-8091-exec-22] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:48.241 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:48.255 [http-nio-8091-exec-22] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:48.257 [http-nio-8091-exec-50] INFO  RaffleActivityController - 积分兑换商品开始 userId:xiaofuge sku:9011
+26-07-02.11:07:48.262 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:90.81
+26-07-02.11:07:48.299 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1260,"dayCountSurplus":1197,"monthCount":1260,"monthCountSurplus":1197,"totalCount":1260,"totalCountSurplus":1159}
+26-07-02.11:07:48.324 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":101}],"info":"调用成功"}
+26-07-02.11:07:48.350 [http-nio-8091-exec-50] INFO  ActivityBaseActionChain - 活动责任链-基础信息 [有效期、状态] 校验开始。sku:9011 activityId:100301
+26-07-02.11:07:48.350 [http-nio-8091-exec-50] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【检验&扣减】开始,sku:9011 activityId:100301
+26-07-02.11:07:48.380 [http-nio-8091-exec-50] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+26-07-02.11:07:48.466 [http-nio-8091-exec-40] INFO  RaffleActivityController - 积分兑换商品开始 userId:xiaofuge sku:9011
+26-07-02.11:07:48.501 [http-nio-8091-exec-50] INFO  RaffleActivityController - 积分兑换商品，创建订单完成 userId:xiaofuge sku:9011 outBusinessNo:877871682770
+26-07-02.11:07:48.501 [http-nio-8091-exec-50] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:CONVERT_SKU amount:-1.68
+26-07-02.11:07:48.544 [http-nio-8091-exec-40] INFO  ActivityBaseActionChain - 活动责任链-基础信息 [有效期、状态] 校验开始。sku:9011 activityId:100301
+26-07-02.11:07:48.544 [http-nio-8091-exec-40] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【检验&扣减】开始,sku:9011 activityId:100301
+26-07-02.11:07:48.576 [http-nio-8091-exec-40] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+26-07-02.11:07:48.726 [http-nio-8091-exec-40] INFO  RaffleActivityController - 积分兑换商品，创建订单完成 userId:xiaofuge sku:9011 outBusinessNo:220877009990
+26-07-02.11:07:48.726 [http-nio-8091-exec-40] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:CONVERT_SKU amount:-1.68
+26-07-02.11:07:48.780 [http-nio-8091-exec-50] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":-1.68,"orderId":"263685814874","outBusinessNo":"877871682770","userId":"xiaofuge"},"id":"67276053668","timestamp":1782961668502}
+26-07-02.11:07:48.798 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":-1.68,"orderId":"263685814874","outBusinessNo":"877871682770","userId":"xiaofuge"},"id":"67276053668","timestamp":1782961668502}
+26-07-02.11:07:48.844 [http-nio-8091-exec-50] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:263685814874 topic: credit_adjust_success
+26-07-02.11:07:48.844 [http-nio-8091-exec-50] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:263685814874
+26-07-02.11:07:48.844 [http-nio-8091-exec-50] INFO  RaffleActivityController - 积分兑换商品，支付订单完成  userId:xiaofuge sku:9011 orderId:263685814874
+26-07-02.11:07:49.001 [http-nio-8091-exec-40] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":-1.68,"orderId":"837287051180","outBusinessNo":"220877009990","userId":"xiaofuge"},"id":"58309803438","timestamp":1782961668726}
+26-07-02.11:07:49.082 [http-nio-8091-exec-40] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:837287051180 topic: credit_adjust_success
+26-07-02.11:07:49.082 [http-nio-8091-exec-40] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:837287051180
+26-07-02.11:07:49.082 [http-nio-8091-exec-40] INFO  RaffleActivityController - 积分兑换商品，支付订单完成  userId:xiaofuge sku:9011 orderId:837287051180
+26-07-02.11:07:49.098 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":-1.68,"orderId":"837287051180","outBusinessNo":"220877009990","userId":"xiaofuge"},"id":"58309803438","timestamp":1782961668726}
+26-07-02.11:07:49.205 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:49.205 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:49.206 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+26-07-02.11:07:49.206 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:49.226 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:87.45
+26-07-02.11:07:49.237 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:49.267 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":101},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":101}],"info":"调用成功"}
+26-07-02.11:07:49.281 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1360,"dayCountSurplus":1297,"monthCount":1360,"monthCountSurplus":1297,"totalCount":1360,"totalCountSurplus":1259}
+26-07-02.11:07:50.066 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+26-07-02.11:07:52.561 [http-nio-8091-exec-37] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:52.561 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:52.562 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:52.590 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:87.45
+26-07-02.11:07:52.591 [http-nio-8091-exec-37] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:52.634 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1460,"dayCountSurplus":1397,"monthCount":1460,"monthCountSurplus":1397,"totalCount":1460,"totalCountSurplus":1359}
+26-07-02.11:07:53.347 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:53.347 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:53.347 [http-nio-8091-exec-35] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:53.375 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:87.45
+26-07-02.11:07:53.381 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:53.399 [http-nio-8091-exec-35] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1460,"dayCountSurplus":1397,"monthCount":1460,"monthCountSurplus":1397,"totalCount":1460,"totalCountSurplus":1359}
+26-07-02.11:07:53.547 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+26-07-02.11:07:53.547 [http-nio-8091-exec-30] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId: xiaofuge
+26-07-02.11:07:53.547 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+26-07-02.11:07:53.561 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:87.45
+26-07-02.11:07:53.565 [http-nio-8091-exec-30] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId: xiaofuge, orders.size: 1
+26-07-02.11:07:53.590 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1460,"dayCountSurplus":1397,"monthCount":1460,"monthCountSurplus":1397,"totalCount":1460,"totalCountSurplus":1359}
+26-07-02.11:07:55.049 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+26-07-02.11:08:00.060 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+26-07-02.11:08:05.040 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+26-07-02.11:08:10.034 [scheduling-1    ] INFO  UpdateActivitySkuStockJob - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+26-07-02.11:33:35.051 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b5f764e (Communications link failure
+
+The last packet successfully received from the server was 1,541,458 milliseconds ago. The last packet sent successfully to the server was 1,541,472 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:40.045 [pool-3-thread-11] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9e493e1 (Communications link failure
+
+The last packet successfully received from the server was 1,550,764 milliseconds ago. The last packet sent successfully to the server was 1,550,783 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:40.061 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ec0a1a7 (Communications link failure
+
+The last packet successfully received from the server was 1,780,872 milliseconds ago. The last packet sent successfully to the server was 1,780,888 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:45.062 [pool-3-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1cc168ea (Communications link failure
+
+The last packet successfully received from the server was 1,667,949 milliseconds ago. The last packet sent successfully to the server was 1,667,966 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:45.062 [pool-3-thread-14] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@682a45ed (Communications link failure
+
+The last packet successfully received from the server was 1,785,342 milliseconds ago. The last packet sent successfully to the server was 1,785,359 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:45.062 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@de80cd8 (Communications link failure
+
+The last packet successfully received from the server was 1,784,971 milliseconds ago. The last packet sent successfully to the server was 1,784,988 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:45.062 [pool-3-thread-11] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@63025c59 (Communications link failure
+
+The last packet successfully received from the server was 1,785,547 milliseconds ago. The last packet sent successfully to the server was 1,785,562 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:50.050 [pool-3-thread-15] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@437b60b4 (Communications link failure
+
+The last packet successfully received from the server was 1,672,953 milliseconds ago. The last packet sent successfully to the server was 1,672,970 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:50.050 [pool-3-thread-16] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3946b59c (Communications link failure
+
+The last packet successfully received from the server was 1,649,285 milliseconds ago. The last packet sent successfully to the server was 1,649,300 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:50.066 [pool-3-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@191f7ef7 (Communications link failure
+
+The last packet successfully received from the server was 1,790,733 milliseconds ago. The last packet sent successfully to the server was 1,790,750 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:50.066 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@524ca6dd (Communications link failure
+
+The last packet successfully received from the server was 1,614,402 milliseconds ago. The last packet sent successfully to the server was 1,614,420 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:33:50.066 [pool-3-thread-14] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27852a3c (Communications link failure
+
+The last packet successfully received from the server was 1,643,824 milliseconds ago. The last packet sent successfully to the server was 1,643,840 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-02.11:56:49.466 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-07-02.11:56:49.482 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-07-02.11:56:49.496 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-07-02.11:56:49.514 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-07-02.11:56:49.634 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-07-02.11:56:49.677 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-07-02.11:56:49.995 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-07-02.11:56:50.309 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-07-02.11:56:50.448 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-07-02.11:56:50.450 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-07-02.11:56:50.450 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-07-02.11:56:50.450 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped

@@ -31,6 +31,7 @@ import com.zhang.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.boot.info.BuildProperties;
 import org.springframework.web.bind.annotation.*;
 
@@ -51,6 +52,7 @@ import java.util.List;
 @RestController()
 @CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/raffle/activity")
+@DubboService(version = "1.0")
 public class RaffleActivityController implements IRaffleActivityService {
     private final SimpleDateFormat dateFormatDay = new SimpleDateFormat("yyyyMMdd");
 
@@ -407,13 +409,13 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .info(ResponseCode.SUCCESS.getInfo())
                     .data(true)
                     .build();
-        }catch (AppException e) {
-            log.error("积分兑换商品失败 userId:{} activityId:{}",  request.getUserId(), request.getSku(), e);
+        } catch (AppException e) {
+            log.error("积分兑换商品失败 userId:{} activityId:{}", request.getUserId(), request.getSku(), e);
             return Response.<Boolean>builder()
                     .code(e.getCode())
                     .info(e.getInfo())
                     .build();
-        }  catch (Exception e) {
+        } catch (Exception e) {
             log.error("积分兑换商品失败 userId:{} sku:{}", request.getUserId(), request.getSku(), e);
             return Response.<Boolean>builder()
                     .code(ResponseCode.UN_ERROR.getCode())
