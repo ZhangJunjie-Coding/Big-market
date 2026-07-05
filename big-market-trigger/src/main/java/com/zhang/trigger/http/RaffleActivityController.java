@@ -25,6 +25,7 @@ import com.zhang.domain.strategy.service.IRaffleStrategy;
 import com.zhang.domain.strategy.service.armory.IStrategyArmory;
 import com.zhang.trigger.api.IRaffleActivityService;
 import com.zhang.trigger.api.dto.*;
+import com.zhang.types.annotations.DCCValue;
 import com.zhang.types.enums.ResponseCode;
 import com.zhang.types.exception.AppException;
 import com.zhang.types.model.Response;
@@ -82,6 +83,9 @@ public class RaffleActivityController implements IRaffleActivityService {
 
     @Resource
     private IRaffleActivitySkuProductService raffleActivitySkuProductService;
+
+    @DCCValue("degradeSwitch:open")
+    private String degradeSwitch;
 
 
     /**
@@ -150,6 +154,12 @@ public class RaffleActivityController implements IRaffleActivityService {
             // 1. 参数校验
             if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
                 throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
+            }
+            if (!"open".equals(degradeSwitch)) {
+                return Response.<ActivityDrawResponseDTO>builder()
+                        .code(ResponseCode.DEGRADE_SWITCH.getCode())
+                        .info(ResponseCode.DEGRADE_SWITCH.getInfo())
+                        .build();
             }
             // 2. 参与活动 - 创建参与记录订单
             UserRaffleOrderEntity orderEntity = raffleActivityPartakeService.createOrder(request.getUserId(), request.getActivityId());
