@@ -1,0 +1,181 @@
+26-07-03.16:15:05.262 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:15:05.263 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:15:07.881 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:15:08.630 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,querySkuProductListByActivityId,creditPayExchangeSku,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=67168&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066507877&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:15:09.184 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&connections=1&corethreads=2&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executes=100&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=big-market&interface=org.apache.dubbo.metadata.MetadataService&methods=getMetadataURL,isMetadataService,getAndListenInstanceMetadata,getExportedURLs,serviceName,version,getSubscribedURLs,exportInstanceMetadata,getExportedServiceURLs,getMetadataInfo,toSortedStrings,getMetadataInfos,getServiceDefinition,getInstanceMetadataChangedListenerMap&pid=67168&qos.enable=false&register=false&release=3.0.9&revision=3.0.9&service-name-mapping=true&side=provider&threadpool=cached&threads=100&timestamp=1783066508915&version=1.0.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:23.016 [Thread-9        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+26-07-03.16:16:23.016 [Thread-14       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+26-07-03.16:16:23.017 [Thread-14       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+26-07-03.16:16:23.017 [Thread-9        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+26-07-03.16:16:23.018 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:23.019 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:23.577 [Dubbo-framework-registry-notification-0-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,querySkuProductListByActivityId,creditPayExchangeSku,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=67168&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066507877&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:32.596 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:32.596 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:34.984 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:35.614 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066594981&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:36.133 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066595826&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:36.142 [Dubbo-framework-registry-notification-2-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066595826&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:36.142 [Dubbo-framework-registry-notification-3-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066595826&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:36.142 [Dubbo-framework-registry-notification-0-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066594981&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:36.142 [Dubbo-framework-registry-notification-1-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066594981&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:36.465 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&connections=1&corethreads=2&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executes=100&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=big-market&interface=org.apache.dubbo.metadata.MetadataService&methods=getMetadataURL,isMetadataService,getExportedURLs,getAndListenInstanceMetadata,serviceName,version,getSubscribedURLs,getExportedServiceURLs,exportInstanceMetadata,getMetadataInfo,toSortedStrings,getMetadataInfos,getServiceDefinition,getInstanceMetadataChangedListenerMap&pid=71352&qos.enable=false&register=false&release=3.0.9&revision=3.0.9&service-name-mapping=true&side=provider&threadpool=cached&threads=100&timestamp=1783066596189&version=1.0.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:16:36.608 [Dubbo-framework-registry-notification-2-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066595826&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.16:46:00.040 [pool-6-thread-5 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b2ee41e (Communications link failure
+
+The last packet successfully received from the server was 1,764,405 milliseconds ago. The last packet sent successfully to the server was 1,764,422 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:05.052 [pool-6-thread-5 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@be2eaee (Communications link failure
+
+The last packet successfully received from the server was 1,768,949 milliseconds ago. The last packet sent successfully to the server was 1,768,960 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:05.052 [pool-6-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@da2bd11 (Communications link failure
+
+The last packet successfully received from the server was 1,769,267 milliseconds ago. The last packet sent successfully to the server was 1,769,281 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:10.043 [pool-6-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5e464f97 (Communications link failure
+
+The last packet successfully received from the server was 1,773,814 milliseconds ago. The last packet sent successfully to the server was 1,773,825 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:10.058 [pool-6-thread-5 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3b5e73e6 (Communications link failure
+
+The last packet successfully received from the server was 1,773,247 milliseconds ago. The last packet sent successfully to the server was 1,773,263 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:10.058 [pool-6-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39798f7b (Communications link failure
+
+The last packet successfully received from the server was 1,773,620 milliseconds ago. The last packet sent successfully to the server was 1,773,639 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:15.034 [pool-6-thread-12] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@132ce002 (Communications link failure
+
+The last packet successfully received from the server was 1,777,862 milliseconds ago. The last packet sent successfully to the server was 1,777,879 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:15.034 [pool-6-thread-11] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19db102b (Communications link failure
+
+The last packet successfully received from the server was 1,779,413 milliseconds ago. The last packet sent successfully to the server was 1,779,428 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:15.049 [pool-6-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@297433e2 (Communications link failure
+
+The last packet successfully received from the server was 1,777,724 milliseconds ago. The last packet sent successfully to the server was 1,777,737 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:15.064 [pool-6-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@164b8a11 (Communications link failure
+
+The last packet successfully received from the server was 1,777,564 milliseconds ago. The last packet sent successfully to the server was 1,777,579 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:20.039 [pool-6-thread-11] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f30abff (Communications link failure
+
+The last packet successfully received from the server was 1,783,690 milliseconds ago. The last packet sent successfully to the server was 1,783,704 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:20.039 [pool-6-thread-14] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@524a7b57 (Communications link failure
+
+The last packet successfully received from the server was 1,783,845 milliseconds ago. The last packet sent successfully to the server was 1,783,859 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:25.022 [pool-6-thread-16] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@578058a1 (Communications link failure
+
+The last packet successfully received from the server was 1,788,525 milliseconds ago. The last packet sent successfully to the server was 1,788,538 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:25.053 [pool-6-thread-11] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5acc2333 (Communications link failure
+
+The last packet successfully received from the server was 1,787,897 milliseconds ago. The last packet sent successfully to the server was 1,787,908 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:25.053 [pool-6-thread-14] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@398ca57d (Communications link failure
+
+The last packet successfully received from the server was 1,788,033 milliseconds ago. The last packet sent successfully to the server was 1,788,050 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.16:46:30.032 [pool-6-thread-16] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@58832a34 (Communications link failure
+
+The last packet successfully received from the server was 1,792,178 milliseconds ago. The last packet sent successfully to the server was 1,792,191 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:09:16.221 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+26-07-03.17:09:16.252 [DubboServerHandler-10.245.30.163:20880-thread-5] WARN  ProfilerServerFilter   -  [DUBBO] [Dubbo-Provider] execute service com.zhang.trigger.api.IRaffleActivityService:1.0#draw cost 1227.754000 ms, this invocation almost (maybe already) timeout. Timeout: 1000ms
+client: 10.245.30.163:4705
+invocation context:
+input=382;
+path=com.zhang.trigger.api.IRaffleActivityService;
+remote.application=big-market-test-rpc;
+dubbo=2.0.2;
+interface=com.zhang.trigger.api.IRaffleActivityService;
+version=1.0;
+timeout=1000;
+thread info: 
+Start time: 82545733700300
++-[ Offset: 0.000000ms; Usage: 1227.754000ms, 100% ] Receive request. Server invoke begin.
+  +-[ Offset: 0.038300ms; Usage: 1227.655100ms, 99% ] Receive request. Server biz impl invoke begin., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.17:09:16.738 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+26-07-03.17:09:16.904 [NettyServerWorker-6-1] WARN  AbstractServer         -  [DUBBO] All clients has disconnected from /10.245.30.163:20880. You can graceful shutdown now., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.17:15:55.023 [pool-6-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5319eef6 (Communications link failure
+
+The last packet successfully received from the server was 1,786,853 milliseconds ago. The last packet sent successfully to the server was 1,786,870 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:16:00.018 [pool-6-thread-6 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@115217c7 (Communications link failure
+
+The last packet successfully received from the server was 1,788,724 milliseconds ago. The last packet sent successfully to the server was 1,788,742 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:16:00.034 [pool-6-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c5face6 (Communications link failure
+
+The last packet successfully received from the server was 1,784,849 milliseconds ago. The last packet sent successfully to the server was 1,784,862 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:16:05.015 [pool-6-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4e8bc4bd (Communications link failure
+
+The last packet successfully received from the server was 1,784,413 milliseconds ago. The last packet sent successfully to the server was 1,784,430 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:16:05.015 [pool-6-thread-5 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39c973d5 (Communications link failure
+
+The last packet successfully received from the server was 1,794,790 milliseconds ago. The last packet sent successfully to the server was 1,794,806 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:16:05.032 [pool-6-thread-6 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4e44fb7b (Communications link failure
+
+The last packet successfully received from the server was 1,779,755 milliseconds ago. The last packet sent successfully to the server was 1,779,770 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:16:05.046 [pool-6-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c124a31 (Communications link failure
+
+The last packet successfully received from the server was 1,774,829 milliseconds ago. The last packet sent successfully to the server was 1,774,844 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:16:10.010 [pool-6-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a2441f8 (Communications link failure
+
+The last packet successfully received from the server was 1,799,423 milliseconds ago. The last packet sent successfully to the server was 1,799,442 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:10.041 [pool-6-thread-12] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40168cdc (Communications link failure
+
+The last packet successfully received from the server was 1,699,990 milliseconds ago. The last packet sent successfully to the server was 1,700,005 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:15.032 [pool-6-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2773de81 (Communications link failure
+
+The last packet successfully received from the server was 1,772,357 milliseconds ago. The last packet sent successfully to the server was 1,772,377 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:15.048 [pool-6-thread-12] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@23faa5ac (Communications link failure
+
+The last packet successfully received from the server was 1,767,615 milliseconds ago. The last packet sent successfully to the server was 1,767,632 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:20.045 [pool-6-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a1976d3 (Communications link failure
+
+The last packet successfully received from the server was 1,772,424 milliseconds ago. The last packet sent successfully to the server was 1,772,442 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:20.045 [pool-6-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@571e5d14 (Communications link failure
+
+The last packet successfully received from the server was 1,764,693 milliseconds ago. The last packet sent successfully to the server was 1,764,706 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:20.045 [pool-6-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@11ad7bc2 (Communications link failure
+
+The last packet successfully received from the server was 1,793,436 milliseconds ago. The last packet sent successfully to the server was 1,793,448 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:20.060 [pool-6-thread-12] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@49e36d6a (Communications link failure
+
+The last packet successfully received from the server was 1,764,535 milliseconds ago. The last packet sent successfully to the server was 1,764,552 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:25.056 [pool-6-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1ee97744 (Communications link failure
+
+The last packet successfully received from the server was 1,774,946 milliseconds ago. The last packet sent successfully to the server was 1,774,962 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:25.056 [pool-6-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ebc3c40 (Communications link failure
+
+The last packet successfully received from the server was 1,764,819 milliseconds ago. The last packet sent successfully to the server was 1,764,837 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:25.056 [pool-6-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@69a5b4e0 (Communications link failure
+
+The last packet successfully received from the server was 1,786,625 milliseconds ago. The last packet sent successfully to the server was 1,786,639 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:25.056 [pool-6-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@103768e3 (Communications link failure
+
+The last packet successfully received from the server was 1,764,597 milliseconds ago. The last packet sent successfully to the server was 1,764,621 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:25.056 [pool-6-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6fc8f8bf (Communications link failure
+
+The last packet successfully received from the server was 1,767,551 milliseconds ago. The last packet sent successfully to the server was 1,767,567 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:25.072 [pool-6-thread-12] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3de768e6 (Communications link failure
+
+The last packet successfully received from the server was 1,764,441 milliseconds ago. The last packet sent successfully to the server was 1,764,456 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:30.047 [pool-6-thread-15] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34068ad4 (Communications link failure
+
+The last packet successfully received from the server was 1,776,356 milliseconds ago. The last packet sent successfully to the server was 1,776,371 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:30.063 [pool-6-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@686d7287 (Communications link failure
+
+The last packet successfully received from the server was 1,772,996 milliseconds ago. The last packet sent successfully to the server was 1,773,014 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:30.063 [pool-6-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@241e33c3 (Communications link failure
+
+The last packet successfully received from the server was 1,770,704 milliseconds ago. The last packet sent successfully to the server was 1,770,717 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:35.033 [pool-6-thread-17] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9de8b6f (Communications link failure
+
+The last packet successfully received from the server was 1,775,235 milliseconds ago. The last packet sent successfully to the server was 1,775,249 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:35.049 [pool-6-thread-15] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@12d39468 (Communications link failure
+
+The last packet successfully received from the server was 1,769,846 milliseconds ago. The last packet sent successfully to the server was 1,769,862 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:35.064 [pool-6-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ec1332f (Communications link failure
+
+The last packet successfully received from the server was 1,769,668 milliseconds ago. The last packet sent successfully to the server was 1,769,685 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.17:45:35.064 [pool-6-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5e973fe9 (Communications link failure
+
+The last packet successfully received from the server was 1,764,874 milliseconds ago. The last packet sent successfully to the server was 1,764,889 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-03.18:06:28.098 [Thread-13       ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+26-07-03.18:06:28.098 [Thread-8        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+26-07-03.18:06:28.098 [Thread-13       ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+26-07-03.18:06:28.098 [Thread-8        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+26-07-03.18:06:28.101 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.18:06:28.102 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.18:06:28.102 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.18:06:28.102 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-03.18:06:28.627 [Dubbo-framework-registry-notification-2-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=71352&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783066595826&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163

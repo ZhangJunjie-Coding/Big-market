@@ -1,0 +1,62 @@
+26-07-04.22:45:05.548 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-07-04.22:45:16.878 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-04.22:45:16.878 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-04.22:45:20.097 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+26-07-04.22:45:21.292 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-04.22:45:22.038 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleStrategyService&methods=randomRaffle,strategyArmory,queryRaffleAwardList,queryRaffleStrategyRuleWeight&pid=114960&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783176321288&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-04.22:45:22.549 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/com.zhang.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.zhang.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=114960&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1783176322259&version=1.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-04.22:45:22.878 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://10.245.30.163:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=10.245.30.163&bind.port=20880&category=configurators&check=false&connections=1&corethreads=2&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executes=100&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=big-market&interface=org.apache.dubbo.metadata.MetadataService&methods=getMetadataURL,isMetadataService,getExportedURLs,getAndListenInstanceMetadata,serviceName,version,getSubscribedURLs,exportInstanceMetadata,getExportedServiceURLs,getMetadataInfo,toSortedStrings,getMetadataInfos,getServiceDefinition,getInstanceMetadataChangedListenerMap&pid=114960&qos.enable=false&register=false&release=3.0.9&revision=3.0.9&service-name-mapping=true&side=provider&threadpool=cached&threads=100&timestamp=1783176322598&version=1.0.0, dubbo version: 3.0.9, current host: 10.245.30.163
+26-07-04.22:46:11.258 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+26-07-04.22:46:59.025 [http-nio-8091-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'value' for method parameter type String is not present]
+26-07-04.22:48:20.482 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+26-07-04.23:15:10.053 [pool-9-thread-14] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2746df2d (Communications link failure
+
+The last packet successfully received from the server was 1,782,443 milliseconds ago. The last packet sent successfully to the server was 1,782,456 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:15:15.034 [pool-9-thread-15] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7d4584eb (Communications link failure
+
+The last packet successfully received from the server was 1,787,235 milliseconds ago. The last packet sent successfully to the server was 1,787,252 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:15:15.065 [pool-9-thread-14] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@344bc178 (Communications link failure
+
+The last packet successfully received from the server was 1,786,949 milliseconds ago. The last packet sent successfully to the server was 1,786,961 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:15:20.026 [pool-9-thread-18] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1636487c (Communications link failure
+
+The last packet successfully received from the server was 1,791,503 milliseconds ago. The last packet sent successfully to the server was 1,791,520 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:15:20.042 [pool-9-thread-15] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@18233f1 (Communications link failure
+
+The last packet successfully received from the server was 1,791,344 milliseconds ago. The last packet sent successfully to the server was 1,791,360 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:15:20.073 [pool-9-thread-14] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d52640e (Communications link failure
+
+The last packet successfully received from the server was 1,791,200 milliseconds ago. The last packet sent successfully to the server was 1,791,215 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:44:45.043 [pool-9-thread-2 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3096103 (Communications link failure
+
+The last packet successfully received from the server was 1,780,311 milliseconds ago. The last packet sent successfully to the server was 1,780,331 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:44:50.059 [pool-9-thread-5 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37900a67 (Communications link failure
+
+The last packet successfully received from the server was 1,778,049 milliseconds ago. The last packet sent successfully to the server was 1,778,061 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:44:50.059 [pool-9-thread-2 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@25c2268c (Communications link failure
+
+The last packet successfully received from the server was 1,784,850 milliseconds ago. The last packet sent successfully to the server was 1,784,863 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:44:55.058 [pool-9-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c0a6ed6 (Communications link failure
+
+The last packet successfully received from the server was 1,787,416 milliseconds ago. The last packet sent successfully to the server was 1,787,430 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:44:55.058 [pool-9-thread-8 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1afee1d (Communications link failure
+
+The last packet successfully received from the server was 1,773,908 milliseconds ago. The last packet sent successfully to the server was 1,773,925 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:44:55.073 [pool-9-thread-5 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@26ac8c2 (Communications link failure
+
+The last packet successfully received from the server was 1,769,590 milliseconds ago. The last packet sent successfully to the server was 1,769,607 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:44:55.073 [pool-9-thread-2 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3264c649 (Communications link failure
+
+The last packet successfully received from the server was 1,771,434 milliseconds ago. The last packet sent successfully to the server was 1,771,450 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:45:00.038 [pool-9-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@70022f08 (Communications link failure
+
+The last packet successfully received from the server was 1,785,225 milliseconds ago. The last packet sent successfully to the server was 1,785,237 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:45:00.038 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@78294795 (Communications link failure
+
+The last packet successfully received from the server was 1,773,700 milliseconds ago. The last packet sent successfully to the server was 1,773,718 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:45:00.069 [pool-9-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@21f37774 (Communications link failure
+
+The last packet successfully received from the server was 1,784,867 milliseconds ago. The last packet sent successfully to the server was 1,784,883 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-07-04.23:45:05.036 [pool-9-thread-12] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56274bf (Communications link failure
+
+The last packet successfully received from the server was 1,784,930 milliseconds ago. The last packet sent successfully to the server was 1,784,944 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
