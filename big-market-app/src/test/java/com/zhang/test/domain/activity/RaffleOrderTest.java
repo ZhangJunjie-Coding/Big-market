@@ -7,7 +7,10 @@ import com.zhang.domain.activity.model.entity.SkuRechargeEntity;
 import com.zhang.domain.activity.service.IRaffleActivityAccountQuotaService;
 import com.zhang.domain.activity.service.armory.IActivityArmory;
 import com.zhang.domain.support.id.IIdGenerator;
+import com.zhang.trigger.api.dto.ActivityDrawRequestDTO;
+import com.zhang.trigger.api.dto.ActivityDrawResponseDTO;
 import com.zhang.types.exception.AppException;
+import com.zhang.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
@@ -86,6 +89,7 @@ public class RaffleOrderTest {
 
         new CountDownLatch(1).await();
     }
+
 
 
 

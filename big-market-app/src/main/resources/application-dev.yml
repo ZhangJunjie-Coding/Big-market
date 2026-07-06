@@ -40,7 +40,7 @@ mini-db-router:
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://223.109.142.81:13306/big_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
-        password: zjj521..
+        password: 123456
         type-class-name: com.zaxxer.hikari.HikariDataSource
         pool:
           pool-name: Retail_HikariCP
@@ -55,7 +55,7 @@ mini-db-router:
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://223.109.142.81:13306/big_market_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
-        password: zjj521..
+        password: 123456
         type-class-name: com.zaxxer.hikari.HikariDataSource
         pool:
           pool-name: Retail_HikariCP
@@ -70,7 +70,7 @@ mini-db-router:
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://223.109.142.81:13306/big_market_02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
-        password: zjj521..
+        password: 123456
         type-class-name: com.zaxxer.hikari.HikariDataSource
         pool:
           pool-name: Retail_HikariCP
@@ -90,7 +90,7 @@ mybatis:
 redis:
   sdk:
     config:
-      host: 223.109.142.81
+      host: 10.245.247.185
       pool-size: 10
       min-idle-size: 5
       idle-timeout: 30000
