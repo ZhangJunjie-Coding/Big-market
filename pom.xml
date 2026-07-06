@@ -151,6 +151,11 @@
                 <artifactId>spring-boot-starter-amqp</artifactId>
                 <version>3.2.0</version>
             </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.plugin</groupId>
+                <artifactId>x-pack-sql-jdbc</artifactId>
+                <version>7.17.14</version>
+            </dependency>
 
             <!-- https://mvnrepository.com/artifact/cn.bugstack.middleware/db-router-spring-boot-starter -->
             <dependency>

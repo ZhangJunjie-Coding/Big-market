@@ -1,7 +1,7 @@
 package com.zhang.test.infrastructure.strategy;
 
-import com.zhang.infrastructure.persistent.dao.IAwardDao;
-import com.zhang.infrastructure.persistent.po.Award;
+import com.zhang.infrastructure.dao.IAwardDao;
+import com.zhang.infrastructure.dao.po.Award;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

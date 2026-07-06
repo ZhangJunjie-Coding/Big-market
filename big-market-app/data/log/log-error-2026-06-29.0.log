@@ -2,7 +2,7 @@
 org.springframework.dao.DataIntegrityViolationException: 
 ### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'total_amount' cannot be null
 ### The error may exist in file [D:\Code\big-market\big-market-app\target\classes\mybatis\mapper\user_credit_account_mapper.xml]
-### The error may involve com.zhang.infrastructure.persistent.dao.IUserCreditAccountDao.updateAddAmount-Inline
+### The error may involve com.zhang.infrastructure.adapter.dao.IUserCreditAccountDao.updateAddAmount-Inline
 ### The error occurred while setting parameters
 ### SQL: update user_credit_account set                                        total_amount = total_amount + ?,                                        available_amount = available_amount + ?         where user_id = ?
 ### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'total_amount' cannot be null
@@ -18,10 +18,10 @@ org.springframework.dao.DataIntegrityViolationException:
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
 	at com.sun.proxy.$Proxy140.updateAddAmount(Unknown Source)
-	at com.zhang.infrastructure.persistent.repository.CreditRepository.lambda$saveUserCreditTradeOrder$0(CreditRepository.java:94)
+	at com.zhang.infrastructure.adapter.repository.CreditRepository.lambda$saveUserCreditTradeOrder$0(CreditRepository.java:94)
 	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
-	at com.zhang.infrastructure.persistent.repository.CreditRepository.saveUserCreditTradeOrder(CreditRepository.java:87)
-	at com.zhang.infrastructure.persistent.repository.CreditRepository$$FastClassBySpringCGLIB$$6bd311cc.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.CreditRepository.saveUserCreditTradeOrder(CreditRepository.java:87)
+	at com.zhang.infrastructure.adapter.repository.CreditRepository$$FastClassBySpringCGLIB$$6bd311cc.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -30,7 +30,7 @@ org.springframework.dao.DataIntegrityViolationException:
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.CreditRepository$$EnhancerBySpringCGLIB$$14e6315e.saveUserCreditTradeOrder(<generated>)
+	at com.zhang.infrastructure.adapter.repository.CreditRepository$$EnhancerBySpringCGLIB$$14e6315e.saveUserCreditTradeOrder(<generated>)
 	at com.zhang.domain.credit.service.CreditAdjustService.createOrder(CreditAdjustService.java:65)
 	at com.zhang.trigger.http.RaffleActivityController.creditPayExchangeSku(RaffleActivityController.java:392)
 	at com.zhang.test.trigger.RaffleActivityControllerTest.test_creditPayExchangeSku(RaffleActivityControllerTest.java:102)
