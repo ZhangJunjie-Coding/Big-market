@@ -1,13 +1,11 @@
 package com.zhang.test;
 
 import com.zhang.domain.support.id.IIdGenerator;
-import com.zhang.infrastructure.persistent.redis.IRedisService;
-import com.zhang.infrastructure.persistent.support.id.SnowflakeIdWorker;
+import com.zhang.infrastructure.redis.IRedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.redisson.api.RMap;
-import org.redisson.api.RedissonClient;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 

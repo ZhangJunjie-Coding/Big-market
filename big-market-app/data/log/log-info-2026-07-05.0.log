@@ -212,8 +212,8 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
 	at com.sun.proxy.$Proxy186.queryNoSendMessageTaskList(Unknown Source)
-	at com.zhang.infrastructure.persistent.repository.TaskRepository.queryNoSendMessageTaskList(TaskRepository.java:30)
-	at com.zhang.infrastructure.persistent.repository.TaskRepository$$FastClassBySpringCGLIB$$a7e77398.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.TaskRepository.queryNoSendMessageTaskList(TaskRepository.java:30)
+	at com.zhang.infrastructure.adapter.repository.TaskRepository$$FastClassBySpringCGLIB$$a7e77398.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -222,7 +222,7 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.TaskRepository$$EnhancerBySpringCGLIB$$9f0ec997.queryNoSendMessageTaskList(<generated>)
+	at com.zhang.infrastructure.adapter.repository.TaskRepository$$EnhancerBySpringCGLIB$$9f0ec997.queryNoSendMessageTaskList(<generated>)
 	at com.zhang.domain.task.service.TaskService.queryNoSendMessageTaskList(TaskService.java:24)
 	at com.zhang.trigger.job.SendMessageTaskJob.lambda$exec$1(SendMessageTaskJob.java:43)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -305,8 +305,8 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
 	at com.sun.proxy.$Proxy186.queryNoSendMessageTaskList(Unknown Source)
-	at com.zhang.infrastructure.persistent.repository.TaskRepository.queryNoSendMessageTaskList(TaskRepository.java:30)
-	at com.zhang.infrastructure.persistent.repository.TaskRepository$$FastClassBySpringCGLIB$$a7e77398.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.TaskRepository.queryNoSendMessageTaskList(TaskRepository.java:30)
+	at com.zhang.infrastructure.adapter.repository.TaskRepository$$FastClassBySpringCGLIB$$a7e77398.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -315,7 +315,7 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.TaskRepository$$EnhancerBySpringCGLIB$$9f0ec997.queryNoSendMessageTaskList(<generated>)
+	at com.zhang.infrastructure.adapter.repository.TaskRepository$$EnhancerBySpringCGLIB$$9f0ec997.queryNoSendMessageTaskList(<generated>)
 	at com.zhang.domain.task.service.TaskService.queryNoSendMessageTaskList(TaskService.java:24)
 	at com.zhang.trigger.job.SendMessageTaskJob.lambda$exec$1(SendMessageTaskJob.java:43)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -387,8 +387,8 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
 	at com.sun.proxy.$Proxy162.queryRaffleActivityByActivityId(Unknown Source)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityByActivityId(ActivityRepository.java:107)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityByActivityId(ActivityRepository.java:107)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -397,7 +397,7 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bb2ba575.queryRaffleActivityByActivityId(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bb2ba575.queryRaffleActivityByActivityId(<generated>)
 	at com.zhang.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:44)
 	at com.zhang.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:33)
 	at com.zhang.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:173)
@@ -479,7 +479,7 @@ Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'root'@'1
 org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
 ### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 ### The error may exist in file [D:\Code\big-market\big-market-app\target\classes\mybatis\mapper\raffle_activity_mapper.xml]
-### The error may involve com.zhang.infrastructure.persistent.dao.IRaffleActivityDao.queryRaffleActivityByActivityId
+### The error may involve com.zhang.infrastructure.adapter.dao.IRaffleActivityDao.queryRaffleActivityByActivityId
 ### The error occurred while executing a query
 ### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
@@ -490,8 +490,8 @@ org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
 	at com.sun.proxy.$Proxy162.queryRaffleActivityByActivityId(Unknown Source)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityByActivityId(ActivityRepository.java:107)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityByActivityId(ActivityRepository.java:107)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -500,7 +500,7 @@ org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bb2ba575.queryRaffleActivityByActivityId(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$bb2ba575.queryRaffleActivityByActivityId(<generated>)
 	at com.zhang.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:44)
 	at com.zhang.domain.activity.service.partake.AbstractRaffleActivityPartake.createOrder(AbstractRaffleActivityPartake.java:33)
 	at com.zhang.trigger.http.RaffleActivityController.draw(RaffleActivityController.java:173)
@@ -562,7 +562,7 @@ org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis
 Caused by: org.apache.ibatis.exceptions.PersistenceException: 
 ### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 ### The error may exist in file [D:\Code\big-market\big-market-app\target\classes\mybatis\mapper\raffle_activity_mapper.xml]
-### The error may involve com.zhang.infrastructure.persistent.dao.IRaffleActivityDao.queryRaffleActivityByActivityId
+### The error may involve com.zhang.infrastructure.adapter.dao.IRaffleActivityDao.queryRaffleActivityByActivityId
 ### The error occurred while executing a query
 ### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
 	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)

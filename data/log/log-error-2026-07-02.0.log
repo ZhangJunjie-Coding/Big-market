@@ -1,7 +1,7 @@
 26-07-02.11:03:58.401 [http-nio-8091-exec-34] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: null
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -10,7 +10,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
 	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
 	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -69,8 +69,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748)
 26-07-02.11:03:58.401 [http-nio-8091-exec-18] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: null
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -79,7 +79,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
 	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
 	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -138,8 +138,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748)
 26-07-02.11:05:20.374 [http-nio-8091-exec-37] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: null
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -148,7 +148,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
 	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
 	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -207,8 +207,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748)
 26-07-02.11:05:20.390 [http-nio-8091-exec-38] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: null
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -217,7 +217,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
 	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
 	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -276,8 +276,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748)
 26-07-02.11:05:57.108 [http-nio-8091-exec-29] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: null
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -286,7 +286,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
 	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
 	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -345,8 +345,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748)
 26-07-02.11:05:57.113 [http-nio-8091-exec-2] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: null
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository.queryRaffleActivityAccountPartakeCount(ActivityRepository.java:442)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$FastClassBySpringCGLIB$$f19cb022.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -355,7 +355,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
+	at com.zhang.infrastructure.adapter.repository.ActivityRepository$$EnhancerBySpringCGLIB$$797e11d5.queryRaffleActivityAccountPartakeCount(<generated>)
 	at com.zhang.domain.activity.service.quota.RaffleActivityAccountQuotaService.queryRaffleActivityAccountPartakeCount(RaffleActivityAccountQuotaService.java:90)
 	at com.zhang.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:218)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -414,8 +414,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748)
 26-07-02.11:06:46.135 [http-nio-8091-exec-45] ERROR RaffleActivityController - 活动抽奖失败 userId:xiaofuge activityId:100301
 com.zhang.types.exception.AppException: null
-	at com.zhang.infrastructure.persistent.repository.StrategyRepository.getRateRange(StrategyRepository.java:114)
-	at com.zhang.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$ab5a3386.invoke(<generated>)
+	at com.zhang.infrastructure.adapter.repository.StrategyRepository.getRateRange(StrategyRepository.java:114)
+	at com.zhang.infrastructure.adapter.repository.StrategyRepository$$FastClassBySpringCGLIB$$ab5a3386.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -424,7 +424,7 @@ com.zhang.types.exception.AppException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at com.zhang.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$6481da81.getRateRange(<generated>)
+	at com.zhang.infrastructure.adapter.repository.StrategyRepository$$EnhancerBySpringCGLIB$$6481da81.getRateRange(<generated>)
 	at com.zhang.domain.strategy.service.armory.StrategyArmoryDispatch.getRandomAwardId(StrategyArmoryDispatch.java:140)
 	at com.zhang.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain.logic(RuleWeightLogicChain.java:75)
 	at com.zhang.domain.strategy.service.rule.chain.impl.BlackListLogicChain.logic(BlackListLogicChain.java:48)

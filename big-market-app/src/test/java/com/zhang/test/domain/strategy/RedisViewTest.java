@@ -1,6 +1,6 @@
 package com.zhang.test.domain.strategy;
 
-import com.zhang.infrastructure.persistent.redis.IRedisService;
+import com.zhang.infrastructure.redis.IRedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

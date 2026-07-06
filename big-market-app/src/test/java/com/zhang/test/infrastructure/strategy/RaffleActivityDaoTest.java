@@ -1,8 +1,8 @@
 package com.zhang.test.infrastructure.strategy;
 
 import com.alibaba.fastjson.JSON;
-import com.zhang.infrastructure.persistent.dao.IRaffleActivityDao;
-import com.zhang.infrastructure.persistent.po.RaffleActivity;
+import com.zhang.infrastructure.dao.IRaffleActivityDao;
+import com.zhang.infrastructure.dao.po.RaffleActivity;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

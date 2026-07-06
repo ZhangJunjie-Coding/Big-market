@@ -123,6 +123,10 @@ spring:
       send_award: send_award
       send_rebate: send_rebate
       credit_adjust_success: credit_adjust_success
+  elasticsearch.datasource:
+    driverClassName: org.elasticsearch.xpack.sql.jdbc.EsDriver
+    url: jdbc:es://http://10.245.247.185:9200
+
 dubbo:
   application:
     name: big-market
