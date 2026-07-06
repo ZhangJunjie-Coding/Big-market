@@ -35,7 +35,8 @@ public class RaffleStrategyTest {
     @Resource
     private RuleLockLogicTreeNode ruleLockLogicTreeNode;
 
-    @Before
+//    @Before
+    @Test
     public void setUp() {
         // 策略装配 100001、100002、100003
 //        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100001L));
@@ -44,8 +45,8 @@ public class RaffleStrategyTest {
         log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100006L));
 
         // 通过反射 mock 规则中的值
-        ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 4900L);
-        ReflectionTestUtils.setField(ruleLockLogicTreeNode, "userRaffleCount", 10L);
+//        ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 4900L);
+//        ReflectionTestUtils.setField(ruleLockLogicTreeNode, "userRaffleCount", 10L);
     }
 
 

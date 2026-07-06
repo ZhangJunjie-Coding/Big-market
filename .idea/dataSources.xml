@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@223.109.142.81" uuid="3cd926c5-c1e7-43f2-8e48-8d378682f30d">
-      <driver-ref>mysql_aurora_aws</driver-ref>
+    <data-source source="LOCAL" name="big_market@223.109.142.81" uuid="a8b43b5d-e5dc-4535-903f-dc7c632a02f7">
+      <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>software.aws.rds.jdbc.mysql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql:aws://223.109.142.81:13306</jdbc-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://223.109.142.81:13306/big_market</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
