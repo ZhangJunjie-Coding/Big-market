@@ -144,4 +144,17 @@ public interface IStrategyRepository {
      */
     List<RuleWeightVO> queryAwardRuleWeight(Long strategyId);
 
+    /**
+     * 查询有效活动的奖品配置
+     *
+     * @return 奖品配置列表
+     */
+    List<StrategyAwardStockKeyVO> queryOpenActivityStrategyAwardList();
+
+
+    /**
+     * 获取奖品库存消费队列
+     */
+    StrategyAwardStockKeyVO takeQueueValue(Long strategyId, Integer awardId) throws InterruptedException;
+
 }
